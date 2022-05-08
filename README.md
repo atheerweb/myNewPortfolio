@@ -38,5 +38,5 @@ $ npm run build
 ## website design
 
 <img src="images/Mobiledesign.png" width="200" />
-<img src="images/pcversion.png" width="200" />
+<img src="images/pcversion.png" width="350" />
 

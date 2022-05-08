@@ -5,6 +5,7 @@ My new portfolio website designed from scratch using Figma and applying UX and U
 ## Requirements
 
 1- Installing [Node](https://nodejs.org/en/) at least version 16.15.0.
+2- visual studio code (optional).
 
 ## Installing project
 
@@ -13,6 +14,8 @@ My new portfolio website designed from scratch using Figma and applying UX and U
 $ git clone https://github.com/atheerweb/myNewPortfolio.git
 
 $ cd myNewPortfolio
+
+$ code .    //optional
 
 $ npm install
 

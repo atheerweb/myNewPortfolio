@@ -37,4 +37,5 @@ $ npm run build
 
 ## website design
 
-![The San Juan Mountains are beautiful!](https://www.photobox.co.uk/my/photo/full?photo_id=504670325898)
+![Mobile design](images/Mobiledesign.png)
+![PC design](images/pcversion.png)

@@ -4,7 +4,7 @@ My new portfolio website designed from scratch using Figma and applying UX and U
 
 ## Requirements
 
-1- Installing [Node](https://nodejs.org/en/) at least version 16.15.0.
+1- Installing [Node](https://nodejs.org/en/) at least version 16.15.0.  
 2- visual studio code (optional).
 
 ## Installing project
@@ -37,4 +37,4 @@ $ npm run build
 
 ## website design
 
-![The San Juan Mountains are beautiful!](https://drive.google.com/file/d/1xOTpL1yMfsqOMeivromjLDKYd4bIIker/view?usp=sharing "San Juan Mountains")
+![The San Juan Mountains are beautiful!](https://www.photobox.co.uk/my/photo/full?photo_id=504670325898)

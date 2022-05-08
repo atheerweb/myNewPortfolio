@@ -5,8 +5,8 @@ ___________________________________________________________________________
 
 ## Requirments
 
-1- Installing [Node](https://duckduckgo.com).
-2- Runinning the following code:
+1- Installing [Node](https://duckduckgo.com).  
+2- Runinning the following code:  
 `npm install`
 
 

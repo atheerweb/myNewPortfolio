@@ -4,9 +4,9 @@ My new portfolio website designed from scratch using Figma and applying UX and U
 
 ___________________________________________________________________________
 
-## Requirments
+## Requirements
 
-1- Installing [Node](https://duckduckgo.com).  
+1- Installing [Node](https://nodejs.org/en/) at least version 16.15.0.  
 
 ___________________________________________________________________________
 
@@ -19,5 +19,24 @@ $ git clone https://github.com/ORG/PROJECT.git
 $ cd PROJECT  
 
 $ npm install     
+
+```
+
+___________________________________________________________________________
+
+
+## Starting project locally
+
+```
+$ npm start
+
+```
+
+___________________________________________________________________________
+
+## Building project
+
+```
+$ npm run build
 
 ```

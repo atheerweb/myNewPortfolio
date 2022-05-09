@@ -5,13 +5,14 @@ import { ChangeTitle } from "../../utils/ChangeTitle";
 import profilepicture from "./../../imgs/profilepicture.png";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
+  const sections = ["testimonials", "recent projects", "contact me"];
   return (
     <div id="home__container">
       <header>
         <img src={profilepicture} alt="profile" id="profile" />
         <h1 className="home__titles">
-          FULL STACK DEVELOPER <br />
-          FRONT END HEAVY
+          full stack developer <br />
+          front end heavy
         </h1>
         <p id="home__paragraph">
           Making Web software solutions for more than 4 years from scratch
@@ -49,6 +50,21 @@ const Home = () => {
           </a>
         </div>
       </header>
+      {sections.map((section , index) => {
+        return (
+          <section id="sections__container" key={index}>
+            <div id="title__wrapper">
+              <div className="title__bar__wrapper">
+                <div className="title__bar"></div>
+              </div>
+              <h1 className="home__titles">{section}</h1>
+              <div className="title__bar__wrapper" id="bottom__right">
+                <div className="title__bar"></div>
+              </div>
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 };

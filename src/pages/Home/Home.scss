@@ -1,65 +1,90 @@
 #home__container {
   margin-top: 2em;
   padding: 0 1.3em;
-  #profile {
-    background-size: cover;
-    width: 100%;
-  }
-  .home__titles {
-    @media (min-width: 413px) {
-      font-size: 1.7rem;
+  header {
+    #profile {
+      background-size: cover;
+      width: 100%;
+      margin-bottom: 1em;
     }
-    font-size: 1.55rem;
-    font-weight: 900;
-    text-align: center;
-    line-height: 132.66%;
-    margin-top: 1em;
-  }
-  #home__paragraph {
-    @media (min-width: 413px) {
-      
-      font-size: 0.9rem;
+    #home__paragraph {
+      @media (min-width: 413px) {
+        font-size: 0.9rem;
+      }
+      font-size: 0.822rem;
+      text-align: center;
+      line-height: 159%;
+      color: var(--secondaryTextColor);
+      margin-top: 1em;
+      #resume {
+        color: var(--textColor);
+        margin-left: 0.1em;
+      }
     }
-    font-size: 0.822rem;
-    text-align: center;
-    line-height: 159%;
-    color: var(--secondaryTextColor);
-    margin-top: 1em;
-    #resume {
-      color: var(--textColor);
-      margin-left: 0.1em;
+    #btns__wrapper {
+      margin-top: 1em;
+      display: flex;
+      justify-content: space-between;
+      .btn__link {
+        text-decoration: none;
+        .btn {
+          @media (min-width: 413px) {
+            width: 11em;
+          }
+          width: 9.5em;
+          height: 3.4rem;
+          border: none;
+          color: white;
+          font-size: 1rem;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          img {
+            margin-right: 0.4em;
+          }
+        }
+      }
+      #linkedin__btn {
+        background-color: #15487d;
+      }
+      #github__btn {
+        background-color: #000000;
+      }
     }
   }
-  #btns__wrapper {
-    margin-top: 1em;
+  #sections__container {
     display: flex;
-    justify-content: space-between;
-   .btn__link{
-text-decoration: none;
-     .btn {
-       @media (min-width: 413px) {
-         width: 11em;
-       }
-       width: 9.5em;
-       height: 3.4rem;
-       border: none;
-       color: white;
-       font-size: 1rem;
-       font-weight: 600;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       border-radius: 6px;
-       img {
-         margin-right: 0.4em;
-       }
-     }
-   }
-    #linkedin__btn {
-      background-color: #15487d;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    .title__bar__wrapper {
+      display: flex;
+      width: 100%;
     }
-    #github__btn {
-      background-color: #000000;
+    #title__wrapper {
+      .title__bar {
+        width: 52px;
+        height: 0.45em;
+        background-color: var(--primaryColor);
+        border-radius: 10px;
+      }
+      #bottom__right {
+        flex-direction: row-reverse;
+      }
     }
   }
+}
+
+.home__titles {
+  text-transform: uppercase;
+  @media (min-width: 413px) {
+    font-size: 1.7rem;
+  }
+  font-size: 1.55rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 132.66%;
 }

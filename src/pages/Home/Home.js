@@ -9,7 +9,7 @@ const Home = () => {
     <div id="home__container">
       <header>
         <img src={profilepicture} alt="profile" id="profile" />
-        <h1 class="home__titles">
+        <h1 className="home__titles">
           FULL STACK DEVELOPER <br />
           FRONT END HEAVY
         </h1>
@@ -29,8 +29,9 @@ const Home = () => {
             href="https://www.linkedin.com/in/yousouf-essa-7029531b7/"
             target="_blank"
             rel="noreferrer"
+            className="btn__link"
           >
-            <button class="btn" id="linkedin__btn">
+            <button className="btn" id="linkedin__btn">
               <img src={linkedIn} alt="" />
               LinkedIn
             </button>
@@ -39,8 +40,9 @@ const Home = () => {
             href="https://github.com/atheerweb"
             target="_blank"
             rel="noreferrer"
+            className="btn__link"
           >
-            <button class="btn" id="github__btn">
+            <button className="btn" id="github__btn">
               <img src={github} alt="" />
               Github
             </button>

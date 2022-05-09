@@ -1,0 +1,52 @@
+#home__container {
+  margin-top: 2em;
+  padding: 0 1.3em;
+  #profile {
+    background-size: cover;
+    width: 100%;
+  }
+  .home__titles {
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 132.66%;
+    margin-top: 1em;
+  }
+  #home__paragraph {
+    text-align: center;
+    line-height: 159%;
+    color: var(--secondaryTextColor);
+    font-size: 0.9rem;
+    margin-top:1em;
+    #resume {
+      color: var(--textColor);
+      margin-left: 0.1em;
+    }
+  }
+  #btns__wrapper {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      width: 11em;
+      height: 3.4rem;
+      border: none;
+      color:white;
+      font-size:1rem;
+      font-weight:600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius:6px ;
+      img{
+        margin-right:0.4em;
+      }
+    }
+    #linkedin__btn {
+      background-color: #15487d;
+    }
+    #github__btn {
+      background-color: #000000;
+    }
+  }
+}

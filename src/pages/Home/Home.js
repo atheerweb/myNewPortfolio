@@ -1,0 +1,54 @@
+import "./Home.scss";
+import linkedIn from "./../../imgs/linkedin.svg";
+import github from "./../../imgs/github.svg";
+import { ChangeTitle } from "../../utils/ChangeTitle";
+import profilepicture from "./../../imgs/profilepicture.png";
+const Home = () => {
+  ChangeTitle("Yosuof Mustafa | Home");
+  return (
+    <div id="home__container">
+      <header>
+        <img src={profilepicture} alt="profile" id="profile" />
+        <h1 class="home__titles">
+          FULL STACK DEVELOPER <br />
+          FRONT END HEAVY
+        </h1>
+        <p id="home__paragraph">
+          Making Web software solutions for more than 4 years from scratch
+          mainly Blogs,LMS,E-commerce with the latest technologies need more
+          info?
+          <a
+            href="https://drive.google.com/file/d/1JW4tk-Acxn4LbQss9pK5Nw__PA4GAap0/view?usp=sharing"
+            id="resume"
+          >
+            download resume
+          </a>
+        </p>
+        <div id="btns__wrapper">
+          <a
+            href="https://www.linkedin.com/in/yousouf-essa-7029531b7/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button class="btn" id="linkedin__btn">
+              <img src={linkedIn} alt="" />
+              LinkedIn
+            </button>
+          </a>
+          <a
+            href="https://github.com/atheerweb"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button class="btn" id="github__btn">
+              <img src={github} alt="" />
+              Github
+            </button>
+          </a>
+        </div>
+      </header>
+    </div>
+  );
+};
+
+export default Home;

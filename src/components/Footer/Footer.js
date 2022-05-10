@@ -8,28 +8,41 @@ const Footer = () => {
     {
       name: "facebook",
       img: facebook,
+      link: "https://web.facebook.com/yousouf.shehata/",
     },
     {
       name: "Whatsapp",
       img: whatsapp,
+      link: "wa.link/eqt8qd",
     },
     {
       name: "LinkedIn",
       img: linkedIn,
+      link: "https://www.linkedin.com/in/yousouf-essa-7029531b7/",
     },
     {
       name: "Github",
       img: github,
+      link: "https://github.com/atheerweb",
     },
   ];
   return (
     <footer>
       <div id="footer__wrapper">
         <h1 className="logo">YOUSOUF</h1>
-        <p>All copyrights reserved 2022 © </p>
+        <p id="copyrights__text">All copyrights reserved 2022 © </p>
         <div id="footer__imgs__wrapper">
           {socialMedia.map((item, index) => {
-            return <img src={item.img} alt={item.name} key={index} className="footer__img" />;
+            return (
+              <a href={item.link} target="_blank" rel="noreferrer">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  key={index}
+                  className="footer__img"
+                />
+              </a>
+            );
           })}
         </div>
       </div>

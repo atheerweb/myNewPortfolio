@@ -5,15 +5,20 @@ footer{
  background-color:var(--primaryColor) ;
  color:white;
  text-align:center;
- height: 166px;
+ height: 9em;
+ #copyrights__text{
+     font-size:0.8rem;
+     font-weight:200;
+     
+ }
  #footer__imgs__wrapper{
      display:flex;
-     margin-top:1em;
+     margin-top:0.7em;
      width:100%;
      justify-content:space-between;
      align-items:center;
      .footer__img{
-         width:1.5em;
+         width:1.4em;
      }
  }
 }

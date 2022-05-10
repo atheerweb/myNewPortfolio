@@ -1,0 +1,19 @@
+footer{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background-color:var(--primaryColor) ;
+ color:white;
+ text-align:center;
+ height: 166px;
+ #footer__imgs__wrapper{
+     display:flex;
+     margin-top:1em;
+     width:100%;
+     justify-content:space-between;
+     align-items:center;
+     .footer__img{
+         width:1.5em;
+     }
+ }
+}

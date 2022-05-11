@@ -6,6 +6,14 @@ import profilepicture from "./../../imgs/profilepicture.png";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
   const sections = ["testimonials", "recent projects", "contact me"];
+  const companys = [
+    {
+      logo: "https://scontent.faly1-2.fna.fbcdn.net/v/t1.6435-9/117597390_194636852087378_5707169380365043521_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=174925&_nc_eui2=AeH69EhtQbkc-TuinYyLbMIU__BAyak7kIf_8EDJqTuQh9VDI-yvTD4ApLKpwtbjr0NnW3HNV_fPbhOMKTQE13-M&_nc_ohc=pzX3c6dxidEAX9IPvRH&_nc_ht=scontent.faly1-2.fna&oh=00_AT93HyCHiDG1tkP2lW_aGyBhC44ccQmQCz68ajhEYPkaaA&oe=62A03F6B",
+      name: "alroaaacademy",
+      text: '"lorem ipsum dolor sit amet, consectetur adipiscing"',
+      reviewer: "Muhammad Mangod",
+    },
+  ];
   return (
     <div id="home__container">
       <header>
@@ -63,9 +71,31 @@ const Home = () => {
               </div>
             </div>
             {section === "testimonials" ? (
-              <h1>{section}</h1>
+              <div id={`${section}__wrapper`}>
+                {companys.map((company, index) => {
+                  return (
+                    <div className="reviews__wrapper">
+                      <img
+                        src={company.logo}
+                        key={index}
+                        alt={company.name}
+                        id={`${company.name}__img`}
+                      />
+                      <p id="review__text" key={index}>
+                        {company.text}
+                      </p>
+                      <div className="reviewer__wrapper">
+
+                      <p id="reviewer" key={index}>
+                        {company.reviewer}
+                      </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             ) : section === "recent projects" ? (
-              <h1>{section}</h1>
+              <details id={section}></details>
             ) : (
               <h1>{section}</h1>
             )}

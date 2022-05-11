@@ -11,7 +11,7 @@ const Home = () => {
       logo: "https://scontent.faly1-2.fna.fbcdn.net/v/t1.6435-9/117597390_194636852087378_5707169380365043521_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=174925&_nc_eui2=AeH69EhtQbkc-TuinYyLbMIU__BAyak7kIf_8EDJqTuQh9VDI-yvTD4ApLKpwtbjr0NnW3HNV_fPbhOMKTQE13-M&_nc_ohc=pzX3c6dxidEAX9IPvRH&_nc_ht=scontent.faly1-2.fna&oh=00_AT93HyCHiDG1tkP2lW_aGyBhC44ccQmQCz68ajhEYPkaaA&oe=62A03F6B",
       name: "alroaaacademy",
       text: '"lorem ipsum dolor sit amet, consectetur adipiscing"',
-      reviewer: "Muhammad Mangod",
+      reviewer: "Muhammad Mangod , CEO",
     },
   ];
   return (

@@ -95,7 +95,9 @@ const Home = () => {
                 })}
               </div>
             ) : section === "recent projects" ? (
-              <details id={section}></details>
+              <div  id={`${section}__wrapper`}>
+                
+              </div>
             ) : (
               <h1>{section}</h1>
             )}

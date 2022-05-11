@@ -50,10 +50,10 @@ const Home = () => {
           </a>
         </div>
       </header>
-      {sections.map((section , index) => {
+      {sections.map((section, index) => {
         return (
-          <section id="sections__container" key={index}>
-            <div id="title__wrapper">
+          <section className="sections__container" id={section} key={index}>
+            <div className="title__wrapper">
               <div className="title__bar__wrapper">
                 <div className="title__bar"></div>
               </div>
@@ -62,6 +62,13 @@ const Home = () => {
                 <div className="title__bar"></div>
               </div>
             </div>
+            {section === "testimonials" ? (
+              <h1>{section}</h1>
+            ) : section === "recent projects" ? (
+              <h1>{section}</h1>
+            ) : (
+              <h1>{section}</h1>
+            )}
           </section>
         );
       })}

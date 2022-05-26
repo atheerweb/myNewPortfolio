@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <footer>
       <div id="footer__wrapper">
-        <h1 className="footer__logo">YOUSOUF</h1>
+        <h1 id="footer__logo">YOUSOUF</h1>
         <p id="footer__text">All copyrights reserved 2022 © </p>
         <div id="footer__imgs">
           {socialMedia.map((item, index) => {

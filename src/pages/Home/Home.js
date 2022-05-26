@@ -2,15 +2,15 @@ import "./Home.scss";
 import linkedIn from "./../../imgs/linkedin.svg";
 import github from "./../../imgs/github.svg";
 import { ChangeTitle } from "../../utils/ChangeTitle";
-import profilepicture from "./../../imgs/profilepicture.png";
+import profilepicture from "./../../imgs/profilepicture.jpg";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
   const sections = ["testimonials", "recent projects", "contact me"];
   const companys = [
     {
-      logo: "https://scontent.faly1-2.fna.fbcdn.net/v/t1.6435-9/117597390_194636852087378_5707169380365043521_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=174925&_nc_eui2=AeH69EhtQbkc-TuinYyLbMIU__BAyak7kIf_8EDJqTuQh9VDI-yvTD4ApLKpwtbjr0NnW3HNV_fPbhOMKTQE13-M&_nc_ohc=pzX3c6dxidEAX9IPvRH&_nc_ht=scontent.faly1-2.fna&oh=00_AT93HyCHiDG1tkP2lW_aGyBhC44ccQmQCz68ajhEYPkaaA&oe=62A03F6B",
+      logo: "alroaa",
       name: "alroaaacademy",
-      text: '"lorem ipsum dolor sit amet, consectetur adipiscing"',
+      text: '"I have worked with yousouf he is really an amazing programmer we helped me a lot in designing the new website for our academy and he exerted a lot of effort in translating our needs and one of his excelling charachterstics is sticking to the contract tasks and sticking to the deadline"',
       reviewer: "Muhammad Mangod , CEO",
     },
   ];
@@ -76,7 +76,7 @@ const Home = () => {
                   return (
                     <div className="reviews__wrapper">
                       <img
-                        src={company.logo}
+                        src={require(`./../../imgs/${company.logo}.svg`)}
                         key={index}
                         alt={company.name}
                         id={`${company.name}__img`}
@@ -85,19 +85,16 @@ const Home = () => {
                         {company.text}
                       </p>
                       <div className="reviewer__wrapper">
-
-                      <p id="reviewer" key={index}>
-                        {company.reviewer}
-                      </p>
+                        <p id="reviewer" key={index}>
+                          {company.reviewer}
+                        </p>
                       </div>
                     </div>
                   );
                 })}
               </div>
             ) : section === "recent projects" ? (
-              <div  id={`${section}__wrapper`}>
-                
-              </div>
+              <div id={`${section}__wrapper`}></div>
             ) : (
               <h1>{section}</h1>
             )}

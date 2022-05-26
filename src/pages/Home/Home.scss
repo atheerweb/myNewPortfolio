@@ -6,6 +6,7 @@
       background-size: cover;
       width: 100%;
       margin-bottom: 1em;
+      border-radius: 10px;
     }
     #home__paragraph {
       @media (min-width: 413px) {
@@ -90,18 +91,18 @@
         align-items: center;
         #review__text {
           text-align: center;
-          font-style:italic;
+          font-style: italic;
           font-weight: 800;
-
+          font-size: 0.75rem;
         }
-        .reviewer__wrapper{
-          width:100%;
-          margin-top:2em;
-          font-size:0.9rem;
+        .reviewer__wrapper {
+          width: 100%;
+          margin-top: 0.5em;
+          font-size: 0.76rem;
         }
       }
       #alroaaacademy__img {
-        width: 6em;
+        width: 5em;
       }
     }
   }

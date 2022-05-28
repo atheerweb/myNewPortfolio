@@ -53,7 +53,7 @@
       display: flex;
       justify-content: space-between;
       @media (min-width: 515px) {
-        width: 80%;
+        width: auto;
       }
       .btn__link {
         text-decoration: none;
@@ -79,9 +79,12 @@
       }
       #linkedin__btn {
         background-color: #15487d;
+        margin-right: 1.5em;
+        cursor: pointer;
       }
       #github__btn {
         background-color: #000000;
+        cursor: pointer;
       }
     }
   }
@@ -91,6 +94,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 2em;
+    @media (min-width: 515px) {
+      align-items: flex-start;
+    }
     .title__bar__wrapper {
       display: flex;
       width: 100%;
@@ -173,8 +179,15 @@
   height: 3.5em;
   overflow-x: scroll;
   padding-left: 0.3em;
+  @media (min-width: 515px) {
+    overflow-x: hidden;
+  }
   .filter__button {
+    @media (min-width: 515px) {
+      font-size: 16px;
+    }
     max-width: auto;
+    cursor: pointer;
     white-space: nowrap;
     padding: 0 1.5em;
     height: 2.7em;
@@ -194,42 +207,55 @@
   a {
     text-decoration: none;
   }
-  .project {
-    background: var(--projectColor);
-    height: 25em;
-    width: 100%;
-    margin-bottom: 1.5em;
-    border-radius: 18px;
-    padding: 1em;
-    color: var(--projectsTextColor);
-    .project__category {
-      font-size: 0.75rem;
-      opacity: 0.85;
-    }
-    .project__name {
-      font-size: 1.5rem;
-    }
-    .project__date {
-      font-size: 0.65rem;
-      opacity: 0.85;
-    }
-    .project__techs {
-      margin-top: 0.5em;
+  .projects {
+    @media (min-width: 515px) {
       display: flex;
-      align-items: center;
-      .project__tech {
-        margin-right: 0.5em;
-      }
+      flex-wrap: wrap;
     }
-    .project__image__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .project {
+      background: var(--projectColor);
+      height: 25em;
       width: 100%;
-      height: 70%;
-      .project__image {
-        width: 13em;
-        border-radius: 8px;
+      margin-right: 1.97em;
+      @media (min-width: 515px) {
+        width: 26em;
+        height: 28em;
+        margin-bottom: 2.5em;
+        padding: 1.5em;
+      }
+      margin-bottom: 1.5em;
+      border-radius: 18px;
+      padding: 1em;
+      color: var(--projectsTextColor);
+      .project__category {
+        font-size: 0.75rem;
+        opacity: 0.85;
+      }
+      .project__name {
+        font-size: 1.5rem;
+      }
+      .project__date {
+        font-size: 0.65rem;
+        opacity: 0.85;
+      }
+      .project__techs {
+        margin-top: 0.5em;
+        display: flex;
+        align-items: center;
+        .project__tech {
+          margin-right: 0.5em;
+        }
+      }
+      .project__image__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        .project__image {
+          width: 13em;
+          border-radius: 8px;
+        }
       }
     }
   }

@@ -250,41 +250,45 @@ const Home = () => {
                     other
                   </button>
                 </div>
-                {projects.map((project) => {
-                  return (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      key={project.name}
-                    >
-                      <div className={`project ${project.data}`}>
-                        <div className="project__image__container">
-                          <img
-                            src={project.img}
-                            className="project__image"
-                            alt=""
-                          />
+                <div className="projects">
+                  {projects.map((project) => {
+                    return (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={project.name}
+                      >
+                        <div className={`project ${project.data}`}>
+                          <div className="project__image__container">
+                            <img
+                              src={project.img}
+                              className="project__image"
+                              alt=""
+                            />
+                          </div>
+                          <p className="project__category">
+                            {project.category}
+                          </p>
+                          <h4 className="project__name">{project.name}</h4>
+                          <p className="project__date">{project.date}</p>
+                          <div className="project__techs">
+                            {projects[project.key].techs.map((tech) => {
+                              return (
+                                <img
+                                  src={tech}
+                                  alt=""
+                                  className="project__tech"
+                                  key={tech}
+                                />
+                              );
+                            })}
+                          </div>
                         </div>
-                        <p className="project__category">{project.category}</p>
-                        <h4 className="project__name">{project.name}</h4>
-                        <p className="project__date">{project.date}</p>
-                        <div className="project__techs">
-                          {projects[project.key].techs.map((tech) => {
-                            return (
-                              <img
-                                src={tech}
-                                alt=""
-                                className="project__tech"
-                                key={tech}
-                              />
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </a>
-                  );
-                })}
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </section>

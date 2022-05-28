@@ -6,8 +6,41 @@ import profilepicture from "./../../imgs/profilepicture.jpg";
 import firebaseImg from "../../imgs/firebase.svg";
 import sass from "../../imgs/sass.svg";
 import nuxt from "../../imgs/nuxt.svg";
+import vue from "../../imgs/vuejs.svg";
+import react from "../../imgs/react.svg";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
+  const ffilter = (e) => {
+    document.querySelectorAll(".filter__button").forEach((button) => {
+      button.classList.remove("filter__active");
+      e.target.classList.add("filter__active");
+    });
+
+    const filter = e.target.getAttribute("data");
+
+    if (filter === "lms") {
+      document.querySelectorAll(".project").forEach((project) => {
+        if (project.classList[1] === "lms") {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
+    } else if (filter === "blogs") {
+      document.querySelectorAll(".project").forEach((project) => {
+        if (project.classList[1] === "blogs") {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
+    } else if (filter === "other") {
+    } else {
+      document.querySelectorAll(".project").forEach((project) => {
+        project.style.display = "block";
+      });
+    }
+  };
   const sections = ["testimonials", "recent projects", "contact me"];
   const companys = [
     {
@@ -25,6 +58,25 @@ const Home = () => {
       techs: [firebaseImg, sass, nuxt],
       key: 0,
       link: "https://rq22-21e1e.web.app/",
+      data: "lms",
+    },
+    {
+      category: "Blogs",
+      name: "Alroaa Blog demo",
+      date: "August 2020 ~ Jan 2021",
+      techs: [firebaseImg, sass, vue],
+      key: 1,
+      link: "https://alroaaacademyblog.web.app/",
+      data: "blogs",
+    },
+    {
+      category: "Learning management systems",
+      name: "Alamini Platform",
+      date: "March 2022 ~ May 2022",
+      techs: [firebaseImg, react],
+      key: 2,
+      link: "https://alaminilms.web.app/",
+      data: "lms",
     },
   ];
   for (let i = 0; i < projects.length; i++) {
@@ -112,10 +164,34 @@ const Home = () => {
             ) : section === "recent projects" ? (
               <div id="recent__projects">
                 <div className="filters">
-                  <button className="filter__button">All</button>
-                  <button className="filter__button">LMS</button>
-                  <button className="filter__button">Blogs</button>
-                  <button className="filter__button">Other</button>
+                  <button
+                    className="filter__button filter__active"
+                    onClick={ffilter}
+                    data="all"
+                  >
+                    All
+                  </button>
+                  <button
+                    className="filter__button"
+                    onClick={ffilter}
+                    data="lms"
+                  >
+                    LMS
+                  </button>
+                  <button
+                    className="filter__button"
+                    onClick={ffilter}
+                    data="blogs"
+                  >
+                    Blogs
+                  </button>
+                  <button
+                    className="filter__button"
+                    onClick={ffilter}
+                    data="other"
+                  >
+                    Other
+                  </button>
                 </div>
                 {projects.map((project) => {
                   return (
@@ -125,7 +201,7 @@ const Home = () => {
                       rel="noreferrer"
                       key={project.name}
                     >
-                      <div className="project">
+                      <div className={`project ${project.data}`}>
                         <div className="project__image__container">
                           <img
                             src={project.img}

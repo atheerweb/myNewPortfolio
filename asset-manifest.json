@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myNewPortfolio/static/css/main.64d58128.css",
-    "main.js": "/myNewPortfolio/static/js/main.139cb266.js",
+    "main.css": "/myNewPortfolio/static/css/main.bacd5791.css",
+    "main.js": "/myNewPortfolio/static/js/main.8de2602d.js",
     "static/media/profilepicture.jpg": "/myNewPortfolio/static/media/profilepicture.2607b6b5440d3d717bfc.jpg",
     "static/media/alroaa.svg": "/myNewPortfolio/static/media/alroaa.705d6565beaff24d1b42.svg",
     "static/media/sass.svg": "/myNewPortfolio/static/media/sass.dfac88fc0abd4ff170bcf20b266ce1c1.svg",
@@ -15,11 +15,11 @@
     "static/media/nuxt.svg": "/myNewPortfolio/static/media/nuxt.bfb5c3622529aa8edbedbb11c8de3b3b.svg",
     "static/media/facebook.svg": "/myNewPortfolio/static/media/facebook.9781020149899870b7fb6b3f1f88a9e4.svg",
     "static/media/vuejs.svg": "/myNewPortfolio/static/media/vuejs.9425601ccf95f0de43b99e91df3cc184.svg",
-    "main.64d58128.css.map": "/myNewPortfolio/static/css/main.64d58128.css.map",
-    "main.139cb266.js.map": "/myNewPortfolio/static/js/main.139cb266.js.map"
+    "main.bacd5791.css.map": "/myNewPortfolio/static/css/main.bacd5791.css.map",
+    "main.8de2602d.js.map": "/myNewPortfolio/static/js/main.8de2602d.js.map"
   },
   "entrypoints": [
-    "static/css/main.64d58128.css",
-    "static/js/main.139cb266.js"
+    "static/css/main.bacd5791.css",
+    "static/js/main.8de2602d.js"
   ]
 }

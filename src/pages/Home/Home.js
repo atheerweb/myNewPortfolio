@@ -24,6 +24,7 @@ const Home = () => {
       date: "November 2021 ~ March 2022",
       techs: [firebaseImg, sass, nuxt],
       key: 0,
+      link: "https://rq22-21e1e.web.app/",
     },
   ];
   for (let i = 0; i < projects.length; i++) {
@@ -118,7 +119,13 @@ const Home = () => {
                 </div>
                 {projects.map((project) => {
                   return (
-                    <div className="project" key={project.name}>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project"
+                      key={project.name}
+                    >
                       <div className="project__image__container">
                         <img
                           src={project.img}
@@ -141,7 +148,7 @@ const Home = () => {
                           );
                         })}
                       </div>
-                    </div>
+                    </a>
                   );
                 })}
               </div>

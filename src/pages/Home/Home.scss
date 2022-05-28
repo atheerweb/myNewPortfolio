@@ -1,16 +1,43 @@
 #home__container {
   margin-top: 2em;
   padding: 0 1.3em;
+  @media (min-width: 515px) {
+    padding: 0 5.5em;
+  }
   header {
+    @media (min-width: 515px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+    #profile__text {
+      @media (min-width: 515px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 37.5%;
+      }
+    }
     #profile {
       background-size: cover;
       width: 100%;
       margin-bottom: 1em;
       border-radius: 10px;
+      @media (min-width: 515px) {
+        width: 30em;
+      }
     }
     #home__paragraph {
       @media (min-width: 413px) {
         font-size: 0.9rem;
+      }
+      @media (min-width: 515px) {
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 1.5em;
       }
       font-size: 0.822rem;
       text-align: center;
@@ -25,11 +52,15 @@
       margin-top: 1em;
       display: flex;
       justify-content: space-between;
+      @media (min-width: 515px) {
+        width: 80%;
+      }
       .btn__link {
         text-decoration: none;
         .btn {
-          @media (min-width: 413px) {
-            width: 11em;
+          @media (min-width: 515px) {
+            width: 12em;
+            height: 4em;
           }
           width: 9.5em;
           height: 3.4rem;
@@ -111,6 +142,10 @@
   text-transform: uppercase;
   @media (min-width: 413px) {
     font-size: 1.7rem;
+  }
+  @media (min-width: 515px) {
+    text-align: left;
+    font-size: 2.5rem;
   }
   font-size: 1.55rem;
   font-weight: 900;

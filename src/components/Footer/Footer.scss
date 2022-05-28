@@ -1,28 +1,29 @@
-footer{
- display:flex;
- justify-content:center;
- align-items:center;
- background-color:var(--primaryColor) ;
- color:white;
- text-align:center;
- height: 9em;
- #footer__text{
-     font-size:0.8rem;
-     font-weight:200;
-     
- }
- #footer__imgs{
-     display:flex;
-     margin-top:0.7em;
-     width:100%;
-     justify-content:space-between;
-     align-items:center;
-     .footer__img{
-         width:1.4em;
-     }
- }
- #footer__logo{
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+  color: white;
+  text-align: center;
+  height: 9em;
+  @media (min-width: 515px) {
+    padding: 0 5.5em;
+  }
+  #footer__text {
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
+  #footer__imgs {
+    display: flex;
+    margin-top: 0.7em;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .footer__img {
+      width: 1.4em;
+    }
+  }
+  #footer__logo {
     font-family: "Staatliches", cursive;
-
- }
+  }
 }

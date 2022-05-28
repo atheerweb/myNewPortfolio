@@ -119,21 +119,25 @@
 }
 
 .filters {
-  width: 100%;
-  align-items: center;
+  width: auto;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 1em;
+  height: 3.5em;
+  overflow-x: scroll;
+  padding-left: 0.3em;
   .filter__button {
-    width: 6.9em;
-    padding: 0 1em;
-    height: 2.5em;
+    max-width: auto;
+    white-space: nowrap;
+    padding: 0 1.5em;
+    height: 2.7em;
     background: none;
     border: none;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-size: 11px;
-    opacity: 0.55;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0.5;
+    margin-right: 1em;
+    font-weight: 600;
     transition: all 220ms ease-out;
   }
 }
@@ -146,7 +150,7 @@
     background: var(--projectColor);
     height: 25em;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     border-radius: 18px;
     padding: 1em;
     color: var(--projectsTextColor);

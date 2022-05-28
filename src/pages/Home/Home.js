@@ -8,6 +8,7 @@ import sass from "../../imgs/sass.svg";
 import nuxt from "../../imgs/nuxt.svg";
 import vue from "../../imgs/vuejs.svg";
 import react from "../../imgs/react.svg";
+import vanillajs from "../../imgs/javascript.svg";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
   const ffilter = (e) => {
@@ -34,14 +35,29 @@ const Home = () => {
           project.style.display = "none";
         }
       });
+    } else if (filter === "e-commerce") {
+      document.querySelectorAll(".project").forEach((project) => {
+        if (project.classList[1] === "e-commerce") {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
     } else if (filter === "other") {
+      document.querySelectorAll(".project").forEach((project) => {
+        if (project.classList[1] === "other") {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
     } else {
       document.querySelectorAll(".project").forEach((project) => {
         project.style.display = "block";
       });
     }
   };
-  const sections = ["testimonials", "recent projects", "contact me"];
+  const sections = ["testimonials", "recent projects"];
   const companys = [
     {
       logo: "alroaa",
@@ -77,6 +93,42 @@ const Home = () => {
       key: 2,
       link: "https://alaminilms.web.app/",
       data: "lms",
+    },
+    {
+      category: "E-Commerce",
+      name: "Witty stores demo",
+      date: "March 2022 ~ March 2022",
+      techs: [react, firebaseImg, sass],
+      key: 3,
+      link: "https://wittystore.netlify.app/",
+      data: "e-commerce",
+    },
+    {
+      category: "Other",
+      name: "Calculator",
+      date: "March 2021 ~ May 2021",
+      techs: [vanillajs],
+      key: 4,
+      link: "https://atheerweb.github.io/Calculator/",
+      data: "other",
+    },
+    {
+      category: "E-Commerce",
+      name: "Stabraq",
+      date: "Apirl 2020 ~ Apirl 2020",
+      techs: [vanillajs],
+      key: 5,
+      link: "https://atheerweb.github.io/stabraq/",
+      data: "e-commerce",
+    },
+    {
+      category: "Other",
+      name: "Todo-list",
+      date: "March 2021 ~ May 2021",
+      techs: [vanillajs],
+      key: 6,
+      link: "https://atheerweb.github.io/todolistproject/",
+      data: "other",
     },
   ];
   for (let i = 0; i < projects.length; i++) {
@@ -140,28 +192,24 @@ const Home = () => {
             </div>
             {section === "testimonials" ? (
               <div id={`${section}__wrapper`}>
-                {companys.map((company, index) => {
+                {companys.map((company) => {
                   return (
-                    <div className="reviews__wrapper">
+                    <div className="reviews__wrapper" key={company.name}>
                       <img
                         src={require(`./../../imgs/${company.logo}.svg`)}
-                        key={index}
+                        key={company.name}
                         alt={company.name}
                         id={`${company.name}__img`}
                       />
-                      <p id="review__text" key={index}>
-                        {company.text}
-                      </p>
+                      <p id="review__text">{company.text}</p>
                       <div className="reviewer__wrapper">
-                        <p id="reviewer" key={index}>
-                          {company.reviewer}
-                        </p>
+                        <p id="reviewer">{company.reviewer}</p>
                       </div>
                     </div>
                   );
                 })}
               </div>
-            ) : section === "recent projects" ? (
+            ) : (
               <div id="recent__projects">
                 <div className="filters">
                   <button
@@ -188,9 +236,16 @@ const Home = () => {
                   <button
                     className="filter__button"
                     onClick={ffilter}
+                    data="e-commerce"
+                  >
+                    e-commerce
+                  </button>
+                  <button
+                    className="filter__button"
+                    onClick={ffilter}
                     data="other"
                   >
-                    Other
+                    other
                   </button>
                 </div>
                 {projects.map((project) => {
@@ -213,13 +268,13 @@ const Home = () => {
                         <h4 className="project__name">{project.name}</h4>
                         <p className="project__date">{project.date}</p>
                         <div className="project__techs">
-                          {projects[project.key].techs.map((tech, keyy) => {
+                          {projects[project.key].techs.map((tech) => {
                             return (
                               <img
                                 src={tech}
                                 alt=""
                                 className="project__tech"
-                                key={keyy}
+                                key={tech}
                               />
                             );
                           })}
@@ -229,8 +284,6 @@ const Home = () => {
                   );
                 })}
               </div>
-            ) : (
-              <h1>dcdc</h1>
             )}
           </section>
         );

@@ -118,3 +118,63 @@
   text-align: center;
   line-height: 132.66%;
 }
+
+.filters {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  .filter__button {
+    width: 6.9em;
+    padding: 0 1em;
+    height: 2.5em;
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 11px;
+    opacity: 0.55;
+  }
+}
+#recent__projects {
+  width: 100%;
+  .project {
+    background: var(--projectColor);
+    height: 25em;
+    width: 100%;
+    margin-bottom: 3em;
+    border-radius: 18px;
+    padding: 1em;
+    color: var(--projectsTextColor);
+    .project__category {
+      font-size: 0.75rem;
+      opacity: 0.85;
+    }
+    .project__name {
+      font-size: 1.5rem;
+    }
+    .project__date {
+      font-size: 0.65rem;
+      opacity: 0.85;
+    }
+    .project__techs {
+      width: 28%;
+      margin-top: 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .project__image__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 70%;
+      .project__image {
+        width: 13em;
+        border-radius: 8px;
+      }
+    }
+  }
+}

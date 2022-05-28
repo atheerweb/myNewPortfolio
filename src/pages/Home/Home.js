@@ -3,6 +3,9 @@ import linkedIn from "./../../imgs/linkedin.svg";
 import github from "./../../imgs/github.svg";
 import { ChangeTitle } from "../../utils/ChangeTitle";
 import profilepicture from "./../../imgs/profilepicture.jpg";
+import firebaseImg from "../../imgs/firebase.svg";
+import sass from "../../imgs/sass.svg";
+import nuxt from "../../imgs/nuxt.svg";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
   const sections = ["testimonials", "recent projects", "contact me"];
@@ -10,10 +13,22 @@ const Home = () => {
     {
       logo: "alroaa",
       name: "alroaaacademy",
-      text: '"I have worked with yousouf he is really an amazing programmer we helped me a lot in designing the new website for our academy and he exerted a lot of effort in translating our needs and one of his excelling charachterstics is sticking to the contract tasks and sticking to the deadline"',
+      text: '"I have worked with yousouf he is really an amazing programmer he helped me a lot in designing the new website for our academy and he exerted a lot of effort in translating our needs and one of his excelling charachterstics is sticking to the contract tasks and sticking to the deadline"',
       reviewer: "Muhammad Mangod , CEO",
     },
   ];
+  const projects = [
+    {
+      category: "Learning management systems",
+      name: "Alroaa Academy",
+      date: "November 2021 ~ March 2022",
+      techs: [firebaseImg, sass, nuxt],
+      key: 0,
+    },
+  ];
+  for (let i = 0; i < projects.length; i++) {
+    projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
+  }
   return (
     <div id="home__container">
       <header>
@@ -58,9 +73,9 @@ const Home = () => {
           </a>
         </div>
       </header>
-      {sections.map((section, index) => {
+      {sections.map((section) => {
         return (
-          <section className="sections__container" id={section} key={index}>
+          <section className="sections__container" id={section} key={section}>
             <div className="title__wrapper">
               <div className="title__bar__wrapper">
                 <div className="title__bar"></div>
@@ -94,9 +109,44 @@ const Home = () => {
                 })}
               </div>
             ) : section === "recent projects" ? (
-              <div id={`${section}__wrapper`}></div>
+              <div id="recent__projects">
+                <div className="filters">
+                  <button className="filter__button">All</button>
+                  <button className="filter__button">LMS</button>
+                  <button className="filter__button">Blogs</button>
+                  <button className="filter__button">Other</button>
+                </div>
+                {projects.map((project) => {
+                  return (
+                    <div className="project" key={project.name}>
+                      <div className="project__image__container">
+                        <img
+                          src={project.img}
+                          className="project__image"
+                          alt=""
+                        />
+                      </div>
+                      <p className="project__category">{project.category}</p>
+                      <h4 className="project__name">{project.name}</h4>
+                      <p className="project__date">{project.date}</p>
+                      <div className="project__techs">
+                        {projects[project.key].techs.map((tech, keyy) => {
+                          return (
+                            <img
+                              src={tech}
+                              alt=""
+                              className="project__tech"
+                              key={keyy}
+                            />
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             ) : (
-              <h1>{section}</h1>
+              <h1>dcdc</h1>
             )}
           </section>
         );

@@ -34,3 +34,7 @@ body {
     rgba(84, 22, 144, 0.78) 99.83%
   );
 }
+
+#bottom__right {
+  flex-direction: row-reverse;
+}

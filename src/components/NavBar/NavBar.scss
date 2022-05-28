@@ -3,7 +3,28 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5em;
+  height: 5.5em;
+  position: sticky;
+  background-color: var(--mainBackgroundColor);
+  top: 0;
+  transition: all 220ms ease-out;
+  z-index: 99999;
+  @media (min-width: 515px) {
+    height: 8em;
+  }
+  #nav__pc {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    @media (min-width: 515px) {
+      display: flex;
+    }
+    .nav__link {
+      opacity: 0.5;
+      list-style: none;
+    }
+  }
   @media (min-width: 515px) {
     padding: 0 5.5em;
   }
@@ -12,6 +33,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    @media (min-width: 515px) {
+      display: none;
+    }
     .button__bar {
       width: 3em;
       height: 0.2em;
@@ -24,6 +48,83 @@ nav {
       &:nth-child(2) {
         width: 2.5em;
       }
+    }
+  }
+}
+
+.nav__active {
+  opacity: 1 !important;
+}
+a {
+  text-decoration: none;
+}
+.nav__bar__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+}
+.nav__bar {
+  height: 0.2em;
+  width: 1em;
+  border-radius: 10px;
+  margin-bottom: 0.35em;
+  background-color: var(--primaryColor);
+}
+.nav__right {
+  margin-top: 0.35em;
+}
+.nav__bar__active {
+  display: block !important;
+  left: 0em !important;
+  transition: all 1.5s cubic-bezier(0, 0.52, 0, 1);
+}
+
+#nav__scroll {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 220ms ease-in;
+}
+
+#nav__links__mobile {
+  position: absolute;
+  list-style: none;
+  height: 125vh;
+  width: 100vw;
+  top: 0;
+  left: -15em;
+  padding: 1.5em;
+  transition: all 1.5s cubic-bezier(0, 0.52, 0, 1);
+  font-size: 1.5rem;
+  background-color: var(--primaryColor);
+  color: var(--mainBackgroundColor);
+  .nav__mobile__exit {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    padding-top: 0.5em;
+    .cross {
+      background-color: var(--mainBackgroundColor);
+      width: 2em;
+      height: 0.2em;
+      border-radius: 10px;
+      transform: rotate(45deg);
+    }
+    .cross__reverse {
+      transform: translatex(2em) rotate(-45deg);
+    }
+  }
+  .nav__links__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    .nav__links__mobile__wrapper {
+      margin-top: 5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 20%;
     }
   }
 }

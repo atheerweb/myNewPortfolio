@@ -11,7 +11,7 @@ import react from "../../imgs/react.svg";
 import vanillajs from "../../imgs/javascript.svg";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
-  const ffilter = (e) => {
+  const filter = (e) => {
     document.querySelectorAll(".filter__button").forEach((button) => {
       button.classList.remove("filter__active");
       e.target.classList.add("filter__active");
@@ -135,7 +135,7 @@ const Home = () => {
     projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
   }
   return (
-    <div id="home__container">
+    <div id="home__container" >
       <header>
         <img src={profilepicture} alt="profile" id="profile" />
         <div id="profile__text">
@@ -148,7 +148,7 @@ const Home = () => {
             mainly Blogs,LMS,E-commerce with the latest technologies need more
             info?
             <a
-              href="https://drive.google.com/file/d/1JW4tk-Acxn4LbQss9pK5Nw__PA4GAap0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ew-d0oB2YIL-2GZxsREBlbiEGc4210X6/view?usp=sharing"
               id="resume"
             >
               download resume
@@ -216,35 +216,35 @@ const Home = () => {
                 <div className="filters">
                   <button
                     className="filter__button filter__active"
-                    onClick={ffilter}
+                    onClick={filter}
                     data="all"
                   >
                     All
                   </button>
                   <button
                     className="filter__button"
-                    onClick={ffilter}
+                    onClick={filter}
                     data="lms"
                   >
                     LMS
                   </button>
                   <button
                     className="filter__button"
-                    onClick={ffilter}
+                    onClick={filter}
                     data="blogs"
                   >
                     Blogs
                   </button>
                   <button
                     className="filter__button"
-                    onClick={ffilter}
+                    onClick={filter}
                     data="e-commerce"
                   >
                     e-commerce
                   </button>
                   <button
                     className="filter__button"
-                    onClick={ffilter}
+                    onClick={filter}
                     data="other"
                   >
                     other

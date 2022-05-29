@@ -11,6 +11,7 @@ import react from "../../imgs/react.svg";
 import vanillajs from "../../imgs/javascript.svg";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
+
   const filter = (e) => {
     document.querySelectorAll(".filter__button").forEach((button) => {
       button.classList.remove("filter__active");
@@ -57,7 +58,7 @@ const Home = () => {
       });
     }
   };
-  const sections = ["testimonials", "recent projects"];
+  const sections = ["testimonials", "recentprojects"];
   const companys = [
     {
       logo: "alroaa",
@@ -135,8 +136,8 @@ const Home = () => {
     projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
   }
   return (
-    <div id="home__container" >
-      <header>
+    <div id="home__container">
+      <header id="aboutme">
         <img src={profilepicture} alt="profile" id="profile" />
         <div id="profile__text">
           <h1 className="home__titles">

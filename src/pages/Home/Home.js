@@ -2,7 +2,7 @@ import "./Home.scss";
 import linkedIn from "./../../imgs/linkedin.svg";
 import github from "./../../imgs/github.svg";
 import { ChangeTitle } from "../../utils/ChangeTitle";
-import profilepicture from "./../../imgs/profilepicture.jpg";
+import profilepicture from "./../../imgs/profilepicture.png";
 import firebaseImg from "../../imgs/firebase.svg";
 import sass from "../../imgs/sass.svg";
 import nuxt from "../../imgs/nuxt.svg";

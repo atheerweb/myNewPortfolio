@@ -42,7 +42,7 @@ const NavBar = () => {
         .querySelector("#nav__2")
         .childNodes[2].childNodes[0].classList.add("nav__bar__active");
       document
-        .querySelector("#nav__2")
+        .querySelector("#nav")
         .childNodes[0].childNodes[0].classList.add("nav__bar__active");
     }
     if (window.scrollY > 0) {

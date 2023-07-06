@@ -69,11 +69,20 @@ const Home = () => {
   ];
   const projects = [
     {
+      category: "E-commerce",
+      name: "Meta Store",
+      date: "july 2022 ~ ",
+      techs: [sass, nuxt],
+      key: 0,
+      link: "https://metacode.store/",
+      data: "e-commerce",
+    },
+    {
       category: "Learning management systems",
       name: "Alroaa Academy",
       date: "November 2021 ~ March 2022",
       techs: [firebaseImg, sass, nuxt],
-      key: 0,
+      key: 1,
       link: "https://rq22-21e1e.web.app/",
       data: "lms",
     },
@@ -82,7 +91,7 @@ const Home = () => {
       name: "Alroaa Blog demo",
       date: "August 2020 ~ Jan 2021",
       techs: [firebaseImg, sass, vue],
-      key: 1,
+      key: 2,
       link: "https://alroaaacademyblog.web.app/",
       data: "blogs",
     },
@@ -91,7 +100,7 @@ const Home = () => {
       name: "Alamini Platform",
       date: "March 2022 ~ May 2022",
       techs: [firebaseImg, react],
-      key: 2,
+      key: 3,
       link: "https://alaminilms.web.app/",
       data: "lms",
     },
@@ -100,7 +109,7 @@ const Home = () => {
       name: "Witty stores demo",
       date: "March 2022 ~ March 2022",
       techs: [react, firebaseImg, sass],
-      key: 3,
+      key: 4,
       link: "https://wittystore.netlify.app/",
       data: "e-commerce",
     },
@@ -109,7 +118,7 @@ const Home = () => {
       name: "Calculator",
       date: "March 2021 ~ May 2021",
       techs: [vanillajs],
-      key: 4,
+      key: 5,
       link: "https://atheerweb.github.io/Calculator/",
       data: "other",
     },
@@ -118,7 +127,7 @@ const Home = () => {
       name: "Stabraq",
       date: "Apirl 2020 ~ Apirl 2020",
       techs: [vanillajs],
-      key: 5,
+      key: 6,
       link: "https://atheerweb.github.io/stabraq/",
       data: "e-commerce",
     },
@@ -127,7 +136,7 @@ const Home = () => {
       name: "Todo-list",
       date: "March 2021 ~ May 2021",
       techs: [vanillajs],
-      key: 6,
+      key: 7,
       link: "https://atheerweb.github.io/todolistproject/",
       data: "other",
     },
@@ -149,7 +158,7 @@ const Home = () => {
             mainly Blogs,LMS,E-commerce with the latest technologies need more
             info?
             <a
-              href="https://drive.google.com/file/d/1ew-d0oB2YIL-2GZxsREBlbiEGc4210X6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1N9Rb-kGZds8RPsSCjGpVBcuT256BFMkK/view?usp=sharing"
               id="resume"
             >
               download resume

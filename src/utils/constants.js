@@ -1,3 +1,15 @@
+import {
+
+    firebaseImg,
+    sass,
+    nuxt,
+    vue,
+    react,
+    vanillajs,
+  } from "../assets/index";
+
+
+
 const sections = ["testimonials", "recentprojects"];
 const companies = [
   {

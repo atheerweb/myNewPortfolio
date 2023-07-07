@@ -4,12 +4,6 @@ import {
   linkedIn,
   github,
   profilepicture,
-  firebaseImg,
-  sass,
-  nuxt,
-  vue,
-  react,
-  vanillajs,
 } from "../../assets/index";
 
 import { sections, companies, projects } from "../../utils/constants";

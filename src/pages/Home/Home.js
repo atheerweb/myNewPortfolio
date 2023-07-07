@@ -10,7 +10,7 @@ import {
   vue,
   react,
   vanillajs,
-} from "../../assets/images/index";
+} from "../../assets/index";
 const Home = () => {
   ChangeTitle("Yosuof Mustafa | Home");
 
@@ -210,7 +210,7 @@ const Home = () => {
                   return (
                     <div className="reviews__wrapper" key={company.name}>
                       <img
-                        src={require(`./../../imgs/${company.logo}.svg`)}
+                        src={require(`./../../assets/images/${company.logo}.svg`)}
                         key={company.name}
                         alt={company.name}
                         id={`${company.name}__img`}

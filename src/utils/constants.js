@@ -1,14 +1,11 @@
 import {
-
-    firebaseImg,
-    sass,
-    nuxt,
-    vue,
-    react,
-    vanillajs,
-  } from "../assets/index";
-
-
+  firebaseImg,
+  sass,
+  nuxt,
+  vue,
+  react,
+  vanillajs,
+} from "../assets/index";
 
 const sections = ["testimonials", "recentprojects"];
 const companies = [
@@ -97,4 +94,6 @@ for (let i = 0; i < projects.length; i++) {
   projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
 }
 
-export { sections, companies, projects };
+const navLinks = [" About Me", "Testimonials", "Projects"];
+
+export { sections, companies, projects, navLinks };

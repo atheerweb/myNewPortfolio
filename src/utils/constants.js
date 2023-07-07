@@ -85,4 +85,4 @@ for (let i = 0; i < projects.length; i++) {
   projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
 }
 
-export { sections, companys, projects };
+export { sections, companies, projects };

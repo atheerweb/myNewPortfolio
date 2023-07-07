@@ -1,8 +1,10 @@
 import "./Footer.scss";
-import linkedIn from "./../../imgs/linkedin.svg";
-import github from "./../../imgs/github.svg";
-import whatsapp from "./../../imgs/whatsapp.svg";
-import facebook from "./../../imgs/facebook.svg";
+import {
+  linkedIn,
+  github,
+  facebook,
+  whatsapp,
+} from "../../assets/images/index";
 const Footer = () => {
   const socialMedia = [
     {

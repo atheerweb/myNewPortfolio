@@ -1,4 +1,3 @@
-import "./Testimonials.scss";
 import { motion } from "framer-motion";
 import {
   sections,

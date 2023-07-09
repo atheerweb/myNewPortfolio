@@ -1,4 +1,4 @@
-import "./SideMenu.scss";
+
 
 import { navLinks } from "../../utils/constants";
 import { useRef } from "react";

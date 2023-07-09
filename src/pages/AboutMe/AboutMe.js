@@ -1,4 +1,4 @@
-import "./AboutMe.scss";
+
 import { ChangeTitle } from "../../utils/ChangeTitle";
 import { linkedIn, github, profilepicture } from "../../assets/index";
 import { animationConfiguration } from "../../utils/constants";

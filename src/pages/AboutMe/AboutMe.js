@@ -14,7 +14,7 @@ const Home = () => {
       initial="initial"
       animate="animate"
       transition="transition"
-      className="pt-12"
+     
     >
       <header className="flex items-center justify-between">
         <div className="flex flex-col gap-14">

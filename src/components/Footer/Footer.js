@@ -1,11 +1,11 @@
 import { socialMedia } from "../../utils/constants";
 const Footer = () => {
   return (
-    <footer>
-      <div id="footer__wrapper">
-        <h1 id="footer__logo">YOUSOUF</h1>
-        <p id="footer__text">All copyrights reserved 2022 © </p>
-        <div id="footer__imgs">
+    <footer className="flex items-center justify-center bg-primaryColor p-10">
+      <div className="text-center text-white flex flex-col gap-3">
+        <h1 className="font-serif text-3xl">YOUSOUF</h1>
+        <p className="text-sm font-light">All copyrights reserved 2022 © </p>
+        <div className="flex items-center justify-center gap-5">
           {socialMedia.map((item) => {
             return (
               <a
@@ -14,7 +14,7 @@ const Footer = () => {
                 rel="noreferrer"
                 key={item.name}
               >
-                <img src={item.img} alt={item.name} className="footer__img" />
+                <img src={item.img} alt={item.name} className="w-5" />
               </a>
             );
           })}

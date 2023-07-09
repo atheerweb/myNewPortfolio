@@ -94,6 +94,25 @@ for (let i = 0; i < projects.length; i++) {
   projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
 }
 
-const navLinks = [" About Me", "Testimonials", "Projects"];
+const navLinks = [
+  { name: "About Me", route: "/" },
+  { name: "Testimonials", route: "testimonials" },
+  { name: "Projects", route: "recent-projects" },
+];
 
-export { sections, companies, projects, navLinks };
+const animationConfiguration = {
+  initial: { opacity: 0, scale: 0.5 },
+  animate: { opacity: 1, scale: 1 },
+  transition: {
+    duration: 0.3,
+    ease: [0, 0.71, 0.2, 1.01],
+    scale: {
+      type: "spring",
+      damping: 5,
+      stiffness: 100,
+      restDelta: 0.001,
+    },
+  },
+};
+
+export { sections, companies, projects, navLinks, animationConfiguration };

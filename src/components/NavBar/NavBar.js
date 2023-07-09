@@ -1,8 +1,8 @@
 import "./NavBar.scss";
-import NavLink from "./NavLink";
 import { useState, useEffect } from "react";
 import { navLinks } from "../../utils/constants";
-import SideMenu from "./SideMenu";
+import { SideMenu, NavLink } from "../index";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -14,7 +14,9 @@ const NavBar = () => {
   });
   return (
     <nav>
-      <h1 className="logo">YOUSOUF</h1>
+      <Link to="/">
+        <h1 className="logo">YOUSOUF</h1>
+      </Link>
       <div id="nav__button" onClick={toggleSideMenu}>
         <div className="button__bar"></div>
         <div className="button__bar"></div>

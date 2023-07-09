@@ -1,40 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-size: cover;
-  font-family: "Nunito", sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  box-sizing: border-box;
-}
 
-.logo {
-  font-family: "Staatliches", cursive;
-  font-size: 2.1rem;
-  color: var(--textcolor);
-}
 
-:root {
-  --mainBackgroundColor: #fcfcfc;
-  --textColor: #000000;
-  --projectsTextColor: #fff;
-  --secondaryTextColor: #797979;
-  --primaryColor: #551790;
-  --projectsColor: linear-gradient(
-    359.8deg,
-    #541690 1.58%,
-    rgba(84, 22, 144, 0.78) 99.83%
-  );
-  --formColor: #745690;
-  --projectColor: linear-gradient(
-    359.8deg,
-    #541690 1.58%,
-    rgba(84, 22, 144, 0.78) 99.83%
-  );
-}
 
-#bottom__right {
-  flex-direction: row-reverse;
-}

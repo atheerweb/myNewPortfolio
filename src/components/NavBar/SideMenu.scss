@@ -4,15 +4,15 @@
     height: 125vh;
     width: 100vw;
     top: 0;
-    left: -15em;
-    @media (min-width: 400px) {
-      left: -100em;
-    }
+    left: -100%;
     padding: 1.5em;
     transition: all 1.5s cubic-bezier(0, 0.52, 0, 1);
     font-size: 1.5rem;
     background-color: var(--primaryColor);
     color: var(--mainBackgroundColor);
+    @media (min-width:37.5rem) {
+      display: none;
+    }
     .nav__mobile__exit {
       width: 100%;
       display: flex;

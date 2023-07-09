@@ -1,17 +1,13 @@
-import Home from "./pages/Home/Home";
-import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
+import { Footer, NavBar, AnimatedRoutes } from "./components/index";
 
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
+    <div className="App font-body">
       <Router>
         <div className="background"></div>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <AnimatedRoutes />
         <Footer />
       </Router>
     </div>

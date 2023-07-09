@@ -14,7 +14,7 @@ nav {
   background-color: var(--mainBackgroundColor);
   top: 0;
   transition: all 220ms ease-out;
-  z-index: 99999;
+  z-index: 1;
   @media (min-width: 515px) {
     height: 8em;
   }

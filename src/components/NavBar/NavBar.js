@@ -12,7 +12,7 @@ const NavBar = () => {
     // window.addEventListener("scroll", activate);
   });
   return (
-    <nav className="flex justify-between align-middle p-10 fixed w-screen bg-white">
+    <nav className="flex justify-between items-center w-full bg-white sticky top-0 py-14">
       <Link to="/">
         <h1 className="font-serif text-4xl font-bold">YOUSOUF</h1>
       </Link>

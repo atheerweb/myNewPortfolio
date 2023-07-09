@@ -10,6 +10,7 @@ module.exports = {
         projectsTextColor: "#fff",
         secondaryTextColor: "#797979",
         formColor: "#745690",
+        linkedin: "#15487D",
       },
       fontFamily: {
         body: ["Nunito", "ui-sans-serif"],

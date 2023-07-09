@@ -3,7 +3,7 @@ import { Footer, NavBar, AnimatedRoutes } from "./components/index";
 import { HashRouter as Router } from "react-router-dom";
 function App() {
   return (
-    <div className="App font-body">
+    <div className="App font-body mx-24">
       <Router>
         <div className="background"></div>
         <NavBar />

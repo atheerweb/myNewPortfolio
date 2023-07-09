@@ -5,9 +5,14 @@ import {
   vue,
   react,
   vanillajs,
+  linkedIn,
+  github,
+  facebook,
+  whatsapp,
 } from "../assets/index";
 
 const sections = ["testimonials", "recentprojects"];
+
 const companies = [
   {
     logo: "alroaa",
@@ -98,6 +103,7 @@ const navLinks = [
   { name: "About Me", route: "/" },
   { name: "Testimonials", route: "testimonials" },
   { name: "Projects", route: "recent-projects" },
+  { name: "Contact Me", route: "contact-me" },
 ];
 
 const animationConfiguration = {
@@ -115,4 +121,34 @@ const animationConfiguration = {
   },
 };
 
-export { sections, companies, projects, navLinks, animationConfiguration };
+const socialMedia = [
+  {
+    name: "facebook",
+    img: facebook,
+    link: "https://web.facebook.com/yousouf.shehata/",
+  },
+  {
+    name: "Whatsapp",
+    img: whatsapp,
+    link: "wa.link/eqt8qd",
+  },
+  {
+    name: "LinkedIn",
+    img: linkedIn,
+    link: "https://www.linkedin.com/in/yousouf-essa-7029531b7/",
+  },
+  {
+    name: "Github",
+    img: github,
+    link: "https://github.com/atheerweb",
+  },
+];
+
+export {
+  sections,
+  companies,
+  projects,
+  navLinks,
+  animationConfiguration,
+  socialMedia,
+};

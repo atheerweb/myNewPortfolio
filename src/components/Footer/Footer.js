@@ -1,28 +1,5 @@
-
-import { linkedIn, github, facebook, whatsapp } from "../../assets/index";
+import { socialMedia } from "../../utils/constants";
 const Footer = () => {
-  const socialMedia = [
-    {
-      name: "facebook",
-      img: facebook,
-      link: "https://web.facebook.com/yousouf.shehata/",
-    },
-    {
-      name: "Whatsapp",
-      img: whatsapp,
-      link: "wa.link/eqt8qd",
-    },
-    {
-      name: "LinkedIn",
-      img: linkedIn,
-      link: "https://www.linkedin.com/in/yousouf-essa-7029531b7/",
-    },
-    {
-      name: "Github",
-      img: github,
-      link: "https://github.com/atheerweb",
-    },
-  ];
   return (
     <footer>
       <div id="footer__wrapper">

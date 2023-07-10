@@ -1,6 +1,6 @@
 # myNewPortfolio
 
-My new portfolio website designed from scratch using Figma and applying UX and UI principles and using React framework as Front-End technology using modern functional components
+My new portfolio website designed from scratch using Figma and applying UX and UI principles and using React framework with using modern functional components with tailwind as css utility library and Framer motion for page transitions
 
 ## Navigating website
 you can view website through [here](https://atheerweb.github.io/myNewPortfolio/)

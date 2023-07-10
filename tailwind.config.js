@@ -11,6 +11,7 @@ module.exports = {
         secondaryTextColor: "#797979",
         formColor: "#745690",
         linkedin: "#15487D",
+        primaryColorLighter: "#7949A8",
       },
       fontFamily: {
         body: ["Nunito", "ui-sans-serif"],

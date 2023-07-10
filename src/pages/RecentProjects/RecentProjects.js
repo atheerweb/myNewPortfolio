@@ -1,55 +1,10 @@
 import { motion } from "framer-motion";
 import { animationConfiguration } from "../../utils/constants";
-import { projects } from "../../utils/constants";
+import { projects , projectTypes } from "../../utils/constants";
 
 function RecentProjects() {
-  const filter = (e) => {
-    document.querySelectorAll(".filter__button").forEach((button) => {
-      button.classList.remove("filter__active");
-      e.target.classList.add("filter__active");
-    });
 
-    const filter = e.target.getAttribute("data");
 
-    if (filter === "lms") {
-      document.querySelectorAll(".project").forEach((project) => {
-        if (project.classList[1] === "lms") {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    } else if (filter === "blogs") {
-      document.querySelectorAll(".project").forEach((project) => {
-        if (project.classList[1] === "blogs") {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    } else if (filter === "e-commerce") {
-      document.querySelectorAll(".project").forEach((project) => {
-        if (project.classList[1] === "e-commerce") {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    } else if (filter === "other") {
-      document.querySelectorAll(".project").forEach((project) => {
-        if (project.classList[1] === "other") {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    } else {
-      document.querySelectorAll(".project").forEach((project) => {
-        project.style.display = "block";
-      });
-    }
-  };
-  const projectTypes = ["all" , 'lms' ,'blogs' , 'e-commerce' , 'other'];
   return (
     <div
       variants={animationConfiguration}

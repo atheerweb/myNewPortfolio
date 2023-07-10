@@ -144,6 +144,8 @@ const socialMedia = [
   },
 ];
 
+const projectTypes = ["all", "lms", "blogs", "e-commerce", "other"];
+
 export {
   sections,
   companies,
@@ -151,4 +153,5 @@ export {
   navLinks,
   animationConfiguration,
   socialMedia,
+  projectTypes,
 };

@@ -5,7 +5,7 @@ import { animationConfiguration } from "../../utils/constants";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  ChangeTitle("Yosuof Mustafa | Home");
+  ChangeTitle("Yousouf Mustafa | Home");
 
   return (
     <div

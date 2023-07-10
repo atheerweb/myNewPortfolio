@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { animationConfiguration } from "../../utils/constants";
 import { projects , projectTypes } from "../../utils/constants";
+import { useState } from "react";
 
 function RecentProjects() {
 
-
+const [chosenFilter, setChosenFilter] = useState('all')
   return (
     <div
       variants={animationConfiguration}
@@ -23,14 +24,15 @@ function RecentProjects() {
   
         <div className="flex gap-3 my-5">
          {projectTypes.map((projectType , projectTypeIndex)=>(
-          <button key={projectTypeIndex} className="w-fit p-2 px-5 rounded-md shadow-md capitalize font-medium text-gray-500">{projectType}
+          <button key={projectTypeIndex} className={`w-fit p-2 px-5 rounded-md shadow-md capitalize  text-gray-500' ${chosenFilter === projectType ? "text-primaryColor font-bold" : ''}`} onClick={()=> {setChosenFilter(projectType)}}>
+          {projectType}
           </button>
          ))}
         </div>
         <div className="flex  flex-wrap gap-4">
           {projects.map((project) => {
-            return (
-              <a
+              if(project.data === chosenFilter){
+                return <a
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
@@ -56,7 +58,8 @@ function RecentProjects() {
                   </div>
                 </div>
               </a>
-            );
+              }
+            
           })}
         </div>
       </div>

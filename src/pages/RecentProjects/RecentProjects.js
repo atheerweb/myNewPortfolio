@@ -31,7 +31,7 @@ const [chosenFilter, setChosenFilter] = useState('all')
         </div>
         <div className="flex  flex-wrap gap-4">
           {projects.map((project) => {
-              if(project.data === chosenFilter){
+              if(chosenFilter !== 'all' && project.data === chosenFilter){
                 return <a
                 href={project.link}
                 target="_blank"
@@ -59,6 +59,34 @@ const [chosenFilter, setChosenFilter] = useState('all')
                 </div>
               </a>
               }
+             if(chosenFilter === 'all'){
+              return <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                key={project.name}
+              >
+                <div className='bg-gradient-to-t from-primaryColor  to-primaryColorLighter p-10 rounded-2xl h-96 text-white '>
+                  <div className="w-56 h-56">
+                    <img src={project.img} className="object-cover rounded-md" alt="" />
+                  </div>
+                  <p className="text-sm mt-2">{project.category}</p>
+                  <h4 className=" text-xl font-bold">{project.name}</h4>
+                  <p className="text-xs">{project.date}</p>
+                  <div className="flex gap-2 my-2">
+                    {projects[project.key].techs.map((tech) => {
+                      return (
+                        <img
+                          src={tech}
+                          alt=""
+                          key={tech}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
+              </a>
+             }
             
           })}
         </div>

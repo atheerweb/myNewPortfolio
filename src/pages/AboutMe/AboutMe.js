@@ -1,6 +1,6 @@
 import { ChangeTitle } from "../../utils/ChangeTitle";
 import { linkedIn, github, profilepicture } from "../../assets/index";
-import { animationConfiguration } from "../../utils/constants";
+import { InitialTransition } from "../../components";
 
 import { motion } from "framer-motion";
 
@@ -8,24 +8,22 @@ const Home = () => {
   ChangeTitle("Yousouf Mustafa | Home");
 
   return (
-    <div
-      id="home__container"
-      variants={animationConfiguration}
-      initial="initial"
-      animate="animate"
-      transition="transition"
-     
-    >
+    <motion.div     
+      initial={{ opacity: 0  }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      >
+  
       <header className="flex items-center justify-between">
         <div className="flex flex-col gap-14">
-        <div className="flex gap-6 flex-col">
-          <h1 className="text-5xl font-black uppercase leading-10">
-            full-stack developer
-          </h1>
-          <h1 className="text-5xl font-black uppercase leading-10">
-            front end heavy
-          </h1>
-        </div>
+          <div className="flex gap-6 flex-col">
+            <h1 className="text-5xl font-black uppercase leading-10">
+              full-stack developer
+            </h1>
+            <h1 className="text-5xl font-black uppercase leading-10">
+              front end heavy
+            </h1>
+          </div>
 
           <p className="w-9/12 text-lg  leading-9 text-gray-500">
             Making Web software solutions for more than 4 years from scratch
@@ -38,7 +36,7 @@ const Home = () => {
               download resume
             </a>
           </p>
-          <div  className="flex gap-6">
+          <div className="flex gap-6">
             <a
               href="https://www.linkedin.com/in/yousouf-essa-7029531b7/"
               target="_blank"
@@ -69,7 +67,7 @@ const Home = () => {
           alt="profile"
         />
       </header>
-    </div>
+    </motion.div>
   );
 };
 

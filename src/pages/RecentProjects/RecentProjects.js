@@ -10,11 +10,10 @@ import { useState } from "react";
 function RecentProjects() {
   const [chosenFilter, setChosenFilter] = useState("all");
   return (
-    <div
-      variants={animationConfiguration}
-      initial="initial"
-      animate="animate"
-      transition="transition"
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <div>
         <StrippedHeading title={"recent projects"} />
@@ -47,7 +46,7 @@ function RecentProjects() {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

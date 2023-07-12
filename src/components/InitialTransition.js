@@ -7,8 +7,9 @@ const blackBox = {
   },
   animate: {
     top: "100%",
+    height: 0,
     transition: {
-      duration: 1,
+      duration: 1.5,
       when: "afterChildren",
       ease: [0.87, 0, 0.13, 1],
     },
@@ -43,9 +44,9 @@ const text = {
 
 function InitialTransition() {
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
+    <div className="inset-0  z-50 flex items-center justify-center">
       <motion.div
-        className="relative z-50 w-full bg-primaryColor flex items-center justify-center"
+        className="relative w-full bg-primaryColor flex items-center justify-center"
         initial="initial"
         animate="animate"
         variants={blackBox}

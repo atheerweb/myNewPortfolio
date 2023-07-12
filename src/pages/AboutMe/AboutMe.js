@@ -1,6 +1,5 @@
 import { ChangeTitle } from "../../utils/ChangeTitle";
 import { linkedIn, github, profilepicture } from "../../assets/index";
-import { InitialTransition } from "../../components";
 
 import { motion } from "framer-motion";
 
@@ -11,7 +10,7 @@ const Home = () => {
     <motion.div     
     
       >
-      <InitialTransition /> 
+    
       <header className="flex items-center justify-between">
         <div className="flex flex-col gap-14">
           <div className="flex gap-6 flex-col">
@@ -70,3 +69,27 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

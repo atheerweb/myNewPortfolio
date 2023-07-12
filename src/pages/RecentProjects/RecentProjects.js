@@ -23,10 +23,10 @@ function RecentProjects() {
           {projectTypes.map((projectType, projectTypeIndex) => (
             <button
               key={projectTypeIndex}
-              className={`w-fit p-2 px-5 rounded-md shadow-md capitalize  text-gray-500' ${
+              className={`w-fit p-2 px-5 rounded-md shadow-md capitalize  ${
                 chosenFilter === projectType
-                  ? "text-primaryColor font-bold"
-                  : ""
+                  ? "text-primaryColor font-bold bg-white"
+                  : "bg-gray-100 text-neutral-400"
               }`}
               onClick={() => {
                 setChosenFilter(projectType);

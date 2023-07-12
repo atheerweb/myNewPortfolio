@@ -9,11 +9,9 @@ const Home = () => {
 
   return (
     <motion.div     
-      initial={{ opacity: 0  }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+    
       >
-  
+      <InitialTransition /> 
       <header className="flex items-center justify-between">
         <div className="flex flex-col gap-14">
           <div className="flex gap-6 flex-col">

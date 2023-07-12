@@ -1,28 +1,42 @@
 import { ChangeTitle } from "../../utils/ChangeTitle";
 import { linkedIn, github, profilepicture } from "../../assets/index";
+import { titleAnimation } from "../../utils/animations";
 
 import { motion } from "framer-motion";
+// const content = {
+//   animate: {
+//     transition: { staggerChildren: 0.1, delayChildren: 2.3 },
+//   },
+// };
 
 const Home = () => {
   ChangeTitle("Yousouf Mustafa | Home");
 
   return (
-    <motion.div     
-    
-      >
-    
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <header className="flex items-center justify-between">
-        <div className="flex flex-col gap-14">
-          <div className="flex gap-6 flex-col">
+        <motion.div
+          initial="initial"
+          animate="animate"
+          className="flex flex-col gap-14"
+        >
+          <motion.div variants={titleAnimation} className="flex gap-6 flex-col">
             <h1 className="text-5xl font-black uppercase leading-10">
               full-stack developer
             </h1>
             <h1 className="text-5xl font-black uppercase leading-10">
               front end heavy
             </h1>
-          </div>
+          </motion.div>
 
-          <p className="w-9/12 text-lg  leading-9 text-gray-500">
+          <motion.p
+            variants={titleAnimation}
+            className="w-9/12 text-lg  leading-9 text-gray-500"
+          >
             Making Web software solutions for more than 4 years from scratch
             mainly Blogs,LMS,E-commerce with the latest technologies need more
             info?
@@ -32,7 +46,7 @@ const Home = () => {
             >
               download resume
             </a>
-          </p>
+          </motion.p>
           <div className="flex gap-6">
             <a
               href="https://www.linkedin.com/in/yousouf-essa-7029531b7/"
@@ -57,7 +71,7 @@ const Home = () => {
               </button>
             </a>
           </div>
-        </div>
+        </motion.div>
         <img
           src={profilepicture}
           className="w-2/5 h-2/5 rounded-lg"
@@ -69,27 +83,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

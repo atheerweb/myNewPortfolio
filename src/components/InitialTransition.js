@@ -1,9 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const blackBox = {
   initial: {
     height: "100vh",
-    bottom: 0,
   },
   animate: {
     top: "100%",
@@ -43,13 +43,21 @@ const text = {
 };
 
 function InitialTransition() {
+  const [animationCompleted, setAnimationCompleted] = useState(false);
   return (
-    <div className="inset-0  z-50 flex items-center justify-center">
+    <div
+      className={`fixed inset-0 z-50 flex items-center justify-center ${
+        animationCompleted ? "hidden" : ""
+      }`}
+    >
       <motion.div
         className="relative w-full bg-primaryColor flex items-center justify-center"
         initial="initial"
         animate="animate"
         variants={blackBox}
+        onAnimationComplete={() => {
+          setAnimationCompleted(true);
+        }}
       >
         <motion.svg className="absolute z-50 flex">
           <pattern

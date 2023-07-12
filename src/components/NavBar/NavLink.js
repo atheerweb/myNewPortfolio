@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavLink = ({ link }) => {
+  const location = useLocation();
+  const checkActiveRoute = (link) => {
+    return link.route === location.pathname
+      ? "w-7 h-1 bg-primaryColor rounded-lg my-1"
+      : "";
+  };
   return (
-    <li className="nav__link nav__active" data="aboutme" id="nav__0">
-      <div className="nav__bar__wrapper ">
-        <div className="nav__bar nav__bar__active"></div>
-      </div>
+    <li className="">
+      <div className={checkActiveRoute(link)}></div>
 
       <Link to={link.route}>{link.name}</Link>
-      <div className="nav__bar__wrapper nav__right" id="bottom__right">
-        <div className="nav__bar nav__bar__active"></div>
+      <div className="flex justify-end">
+        <div className={checkActiveRoute(link)}></div>
       </div>
     </li>
   );

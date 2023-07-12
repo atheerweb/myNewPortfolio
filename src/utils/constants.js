@@ -101,9 +101,9 @@ for (let i = 0; i < projects.length; i++) {
 
 const navLinks = [
   { name: "About Me", route: "/" },
-  { name: "Testimonials", route: "testimonials" },
-  { name: "Projects", route: "recent-projects" },
-  { name: "Contact Me", route: "contact-me" },
+  { name: "Testimonials", route: "/testimonials" },
+  { name: "Projects", route: "/recent-projects" },
+  { name: "Contact Me", route: "/contact-me" },
 ];
 
 const animationConfiguration = {

@@ -21,7 +21,7 @@ const NavBar = () => {
         <div className="bg-primaryColor w-8 h-1"></div>
         <div className="bg-primaryColor w-10 h-1"></div>
       </div> */}
-      <ul className="flex gap-10">
+      <ul className="flex gap-10 items-center justify-center">
         {navLinks.map((link, linkIndex) => (
           <NavLink key={linkIndex} link={link} />
         ))}

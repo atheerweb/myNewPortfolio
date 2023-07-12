@@ -9,6 +9,7 @@ import react from "./images/react.svg";
 import vanillajs from "./images/javascript.svg";
 import whatsapp from "./images/whatsapp.svg";
 import facebook from "./images/facebook.svg";
+import AlroaaAcademyLogo from "./images/alroaa.svg";
 
 export {
   linkedIn,
@@ -22,4 +23,5 @@ export {
   vanillajs,
   facebook,
   whatsapp,
+  AlroaaAcademyLogo,
 };

@@ -5,6 +5,7 @@ import NavLink from "./NavBar/NavLink";
 import AnimatedRoutes from "./AnimatedRoutes";
 import InitialTransition from "./AnimatedRoutes";
 import RecentProject from "./RecentProject";
+import StrippedHeading from "./StrippedHeading";
 
 export {
   Footer,
@@ -14,4 +15,5 @@ export {
   AnimatedRoutes,
   InitialTransition,
   RecentProject,
+  StrippedHeading,
 };

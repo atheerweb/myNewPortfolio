@@ -1,52 +1,21 @@
 import { motion } from "framer-motion";
-import {
-  sections,
-  animationConfiguration,
-} from "../../utils/constants";
+import { sections, animationConfiguration } from "../../utils/constants";
+import { RecentProject, StrippedHeading } from "../../components/index";
+import { AlroaaAcademyLogo } from "../../assets/index";
 
 function Testimonials() {
-
   return (
-    <div
-      variants={animationConfiguration}
-      initial="initial"
-      animate="animate"
-      transition="transition"
-    >
-      {sections.map((section) => {
-        return (
-          <section className="sections__container" id={section} key={section}>
-            <div className="title__wrapper">
-              <div className="title__bar__wrapper">
-                <div className="title__bar"></div>
-              </div>
-              <h1 className="home__titles">{section}</h1>
-              <div className="title__bar__wrapper" id="bottom__right">
-                <div className="title__bar"></div>
-              </div>
-            </div>
-
-            <div id={`${section}__wrapper`}>
-              {/* {companies.map((company) => {
-                  return (
-                    <div className="reviews__wrapper" key={company.name}>
-                      <img
-                        src={require(`./../../assets/images/${company.logo}.svg`)}
-                        key={company.name}
-                        alt={company.name}
-                        id={`${company.name}__img`}
-                      />
-                      <p id="review__text">{company.text}</p>
-                      <div className="reviewer__wrapper">
-                        <p id="reviewer">{company.reviewer}</p>
-                      </div>
-                    </div>
-                  );
-                })} */}
-            </div>
-          </section>
-        );
-      })}
+    <div className="flex justify-between items-center py-20">
+      <StrippedHeading title={"testimonials"} />
+      <div className="bg-white shadow-md rounded-md w-96 flex flex-col p-5 gap-1  justify-center">
+      <div className=" flex items-center justify-center">
+        <img src={AlroaaAcademyLogo} alt="alroaa academy logo" className="w-20" />
+      </div>
+        <b className="italic text-center">
+        “Yousouf is a very creative programmer at our company Yousouf is a very creative programmer at our company”
+        </b>
+        <p className="text-sm mt-3">~Muhammad Mangod,CEO</p>
+      </div>
     </div>
   );
 }

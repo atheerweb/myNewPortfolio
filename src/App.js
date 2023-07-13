@@ -6,9 +6,9 @@ function App() {
   return (
     <Router>
       <InitialTransition />
-      <div className="App font-body m-auto max-w-7xl min-h-screen">
+      <div className="App font-body m-auto max-w-7xl min-h-screen  p-4 sm:p-0">
         <NavBar />
-        <div className="py-10">
+        <div className="sm:py-10">
           <AnimatedRoutes />
         </div>
       </div>

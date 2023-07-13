@@ -18,24 +18,32 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <header className="flex items-center justify-between">
+      <header className="flex flex-col sm:flex-row-reverse items-center justify-between">
+        <img
+          src={profilepicture}
+          className="w-full h-full   sm:w-2/5 sm:h-2/5 rounded-lg"
+          alt="profile"
+        />
         <motion.div
           initial="initial"
           animate="animate"
-          className="flex flex-col gap-14"
+          className="flex flex-col gap-5 sm:gap-14"
         >
-          <motion.div variants={titleAnimation} className="flex gap-6 flex-col">
-            <h1 className="text-5xl font-black uppercase leading-10">
+          <motion.div
+            variants={titleAnimation}
+            className="flex mt-5 sm:mt-0  sm:gap-6 flex-col"
+          >
+            <h1 className="text-3xl sm:text-5xl font-black text-center sm:text-start uppercase sm:leading-10">
               full-stack developer
             </h1>
-            <h1 className="text-5xl font-black uppercase leading-10">
+            <h1 className="text-3xl sm:text-5xl font-black text-center sm:text-start uppercase sm:leading-10">
               front end heavy
             </h1>
           </motion.div>
 
           <motion.p
             variants={titleAnimation}
-            className="w-9/12 text-lg  leading-9 text-gray-500"
+            className="sm:w-9/12 text-lg  leading-9 text-gray-500 text-center sm:text-start"
           >
             Making Web software solutions for more than 4 years from scratch
             mainly Blogs,LMS,E-commerce with the latest technologies need more
@@ -47,14 +55,14 @@ const Home = () => {
               download resume
             </a>
           </motion.p>
-          <div className="flex gap-6">
+          <div className="flex items-center sm:items-start justify-center sm:justify-start gap-6">
             <a
               href="https://www.linkedin.com/in/yousouf-essa-7029531b7/"
               target="_blank"
               rel="noreferrer"
               className="btn__link"
             >
-              <button className="bg-linkedin rounded-md flex gap-2 items-center justify-center w-48 h-14  text-white">
+              <button className="bg-linkedin rounded-md flex gap-2 items-center justify-center w-44 sm:w-48 h-14  text-white">
                 <img src={linkedIn} alt="" />
                 LinkedIn
               </button>
@@ -65,18 +73,13 @@ const Home = () => {
               rel="noreferrer"
               className="btn__link"
             >
-              <button className="bg-black rounded-md  text-white flex items-center justify-center gap-2  w-48 h-14">
+              <button className="bg-black rounded-md  text-white flex items-center justify-center gap-2  w-44 sm:w-48 h-14">
                 <img src={github} alt="" />
                 Github
               </button>
             </a>
           </div>
         </motion.div>
-        <img
-          src={profilepicture}
-          className="w-2/5 h-2/5 rounded-lg"
-          alt="profile"
-        />
       </header>
     </motion.div>
   );

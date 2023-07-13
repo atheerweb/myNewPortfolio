@@ -6,7 +6,7 @@ function RecentProject({ project }) {
           <img src={project.img} className="object-cover rounded-md" alt="" />
         </div>
         <p className="text-sm mt-2">{project.category}</p>
-        <h4 className=" text-xl font-bold">{project.name}</h4>
+        <h4 className="text-xl font-bold capitalize">{project.name}</h4>
         <p className="text-xs">{project.date}</p>
         <div className="flex gap-2 my-2">
           {project.techs.map((tech) => {

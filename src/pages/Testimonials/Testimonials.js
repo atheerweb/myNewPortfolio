@@ -9,10 +9,10 @@ function Testimonials() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="flex justify-between items-center py-20"
+      className="flex flex-col justify-between items-center py-20"
     >
       <StrippedHeading title={"testimonials"} />
-      <div className="bg-white shadow-md rounded-md w-96 flex flex-col p-5 gap-1  justify-center">
+      <div className="bg-white shadow-md rounded-md w-full sm:w-96 flex flex-col p-5 gap-1  justify-center">
         <div className=" flex items-center justify-center">
           <img
             src={AlroaaAcademyLogo}

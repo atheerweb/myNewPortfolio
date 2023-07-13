@@ -43,7 +43,7 @@ const Home = () => {
 
           <motion.p
             variants={titleAnimation}
-            className="sm:w-9/12 text-lg  leading-9 text-gray-500 text-center sm:text-start"
+            className="sm:w-9/12 text-base sm:text-lg  leading-7 sm:leading-9 text-gray-500 text-center sm:text-start"
           >
             Making Web software solutions for more than 4 years from scratch
             mainly Blogs,LMS,E-commerce with the latest technologies need more
@@ -62,7 +62,7 @@ const Home = () => {
               rel="noreferrer"
               className="btn__link"
             >
-              <button className="bg-linkedin rounded-md flex gap-2 items-center justify-center w-44 sm:w-48 h-14  text-white">
+              <button className="bg-linkedin rounded-md flex gap-2 items-center justify-center w-40 sm:w-48 h-14  text-white">
                 <img src={linkedIn} alt="" />
                 LinkedIn
               </button>
@@ -73,7 +73,7 @@ const Home = () => {
               rel="noreferrer"
               className="btn__link"
             >
-              <button className="bg-black rounded-md  text-white flex items-center justify-center gap-2  w-44 sm:w-48 h-14">
+              <button className="bg-black rounded-md  text-white flex items-center justify-center gap-2  w-40 sm:w-48 h-14">
                 <img src={github} alt="" />
                 Github
               </button>

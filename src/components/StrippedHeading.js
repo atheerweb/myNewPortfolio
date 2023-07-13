@@ -10,7 +10,7 @@ const content = {
 
 function StrippedHeading({ title }) {
   return (
-    <motion.div className="w-fit m-auto" animate="animate" variants={content}>
+    <motion.div className="w-fit m-auto sm:m-0" animate="animate" variants={content}>
       <motion.div
         className="h-3 bg-primaryColor rounded-full my-3"
         initial="initial"

@@ -1,8 +1,6 @@
 import { navLinks } from "../../utils/constants";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import "./SideMenu.scss";
-
 const SideMenu = ({ isActive, toggleSideMenu }) => {
   const checkActiveState = () => {
     return isActive ? "visible" : "hidden";

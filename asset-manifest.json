@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/myNewPortfolio/static/css/main.c4d1455f.css",
-    "main.js": "/myNewPortfolio/static/js/main.031d6f02.js",
-    "static/media/profilepicture.png": "/myNewPortfolio/static/media/profilepicture.2a66c877509f837bf058.png",
-    "static/media/alroaa.svg": "/myNewPortfolio/static/media/alroaa.705d6565beaff24d1b42c0e465a97cee.svg",
-    "static/media/sass.svg": "/myNewPortfolio/static/media/sass.efdf8dfdeda5d85a21e4809d1b346457.svg",
-    "static/media/react.svg": "/myNewPortfolio/static/media/react.e88f2188fbbf646110a2e195a7290696.svg",
-    "static/media/whatsapp.svg": "/myNewPortfolio/static/media/whatsapp.2920a74a7607e007c4956ebeafa9f759.svg",
-    "static/media/linkedin.svg": "/myNewPortfolio/static/media/linkedin.38eb22c5f6c94d665810a8150ecd3c4c.svg",
-    "static/media/github.svg": "/myNewPortfolio/static/media/github.2759eaa4cfcc4fca9e984363ab038bf3.svg",
-    "static/media/javascript.svg": "/myNewPortfolio/static/media/javascript.6e9d2f7b5a0225bcda4cd6cd81d8c2ba.svg",
-    "index.html": "/myNewPortfolio/index.html",
-    "static/media/firebase.svg": "/myNewPortfolio/static/media/firebase.ebaa9bd1d38ef7fd94e5748a1799359f.svg",
-    "static/media/nuxt.svg": "/myNewPortfolio/static/media/nuxt.79df6a3c6f5559752b25ea82ff17c03d.svg",
-    "static/media/facebook.svg": "/myNewPortfolio/static/media/facebook.da116950cd2979fcbfbcbf38f367f87c.svg",
-    "static/media/vuejs.svg": "/myNewPortfolio/static/media/vuejs.eb5d0494805cdba622d278b52c6ac05a.svg",
-    "main.c4d1455f.css.map": "/myNewPortfolio/static/css/main.c4d1455f.css.map",
-    "main.031d6f02.js.map": "/myNewPortfolio/static/js/main.031d6f02.js.map"
+    "main.css": "/yousouffportfolio/static/css/main.3aabc221.css",
+    "main.js": "/yousouffportfolio/static/js/main.ac969bbc.js",
+    "static/media/profilepicture.png": "/yousouffportfolio/static/media/profilepicture.2a66c877509f837bf058.png",
+    "static/media/alroaa.svg": "/yousouffportfolio/static/media/alroaa.705d6565beaff24d1b42c0e465a97cee.svg",
+    "static/media/sass.svg": "/yousouffportfolio/static/media/sass.efdf8dfdeda5d85a21e4809d1b346457.svg",
+    "static/media/react.svg": "/yousouffportfolio/static/media/react.e88f2188fbbf646110a2e195a7290696.svg",
+    "static/media/whatsapp.svg": "/yousouffportfolio/static/media/whatsapp.2920a74a7607e007c4956ebeafa9f759.svg",
+    "static/media/linkedin.svg": "/yousouffportfolio/static/media/linkedin.38eb22c5f6c94d665810a8150ecd3c4c.svg",
+    "static/media/github.svg": "/yousouffportfolio/static/media/github.2759eaa4cfcc4fca9e984363ab038bf3.svg",
+    "index.html": "/yousouffportfolio/index.html",
+    "static/media/javascript.svg": "/yousouffportfolio/static/media/javascript.6e9d2f7b5a0225bcda4cd6cd81d8c2ba.svg",
+    "static/media/firebase.svg": "/yousouffportfolio/static/media/firebase.ebaa9bd1d38ef7fd94e5748a1799359f.svg",
+    "static/media/nuxt.svg": "/yousouffportfolio/static/media/nuxt.79df6a3c6f5559752b25ea82ff17c03d.svg",
+    "static/media/facebook.svg": "/yousouffportfolio/static/media/facebook.da116950cd2979fcbfbcbf38f367f87c.svg",
+    "static/media/vuejs.svg": "/yousouffportfolio/static/media/vuejs.eb5d0494805cdba622d278b52c6ac05a.svg",
+    "main.3aabc221.css.map": "/yousouffportfolio/static/css/main.3aabc221.css.map",
+    "main.ac969bbc.js.map": "/yousouffportfolio/static/js/main.ac969bbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4d1455f.css",
-    "static/js/main.031d6f02.js"
+    "static/css/main.3aabc221.css",
+    "static/js/main.ac969bbc.js"
   ]
 }

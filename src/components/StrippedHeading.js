@@ -10,15 +10,15 @@ const content = {
 
 function StrippedHeading({ title }) {
   return (
-    <motion.div className="w-fit" animate="animate" variants={content}>
+    <motion.div className="w-fit m-auto" animate="animate" variants={content}>
       <motion.div
-        className=" h-3 bg-primaryColor rounded-full my-3"
+        className="h-3 bg-primaryColor rounded-full my-3"
         initial="initial"
         animate="animate"
         variants={titleStripes}
       ></motion.div>
       <motion.h2
-        className="text-4xl font-black uppercase"
+        className="text-3xl sm:text-4xl font-black uppercase"
         initial="initial"
         animate="animate"
         variants={titleAnimation}

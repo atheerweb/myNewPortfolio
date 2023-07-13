@@ -9,6 +9,11 @@ import { useState } from "react";
 
 function RecentProjects() {
   const [chosenFilter, setChosenFilter] = useState("all");
+  const checkActiveFilter = (projectType) => {
+    return chosenFilter === projectType
+      ? "text-primaryColor font-bold bg-white"
+      : "bg-gray-100 text-neutral-400";
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,15 +23,13 @@ function RecentProjects() {
       <div>
         <StrippedHeading title={"recent projects"} />
 
-        <div className="flex gap-3 my-5">
+        <div className="flex gap-3 my-5 overflow-x-auto py-5">
           {projectTypes.map((projectType, projectTypeIndex) => (
             <button
               key={projectTypeIndex}
-              className={`w-fit p-2 px-5 rounded-md shadow-md capitalize  ${
-                chosenFilter === projectType
-                  ? "text-primaryColor font-bold bg-white"
-                  : "bg-gray-100 text-neutral-400"
-              }`}
+              className={`w-fit p-2 px-5 rounded-md shadow-md capitalize whitespace-nowrap  ${checkActiveFilter(
+                projectType
+              )}`}
               onClick={() => {
                 setChosenFilter(projectType);
               }}
@@ -35,7 +38,7 @@ function RecentProjects() {
             </button>
           ))}
         </div>
-        <div className="flex  flex-wrap gap-4">
+        <div className="flex items-center justify-center sm:justify-start  flex-wrap gap-4">
           {projects.map((project) => {
             if (chosenFilter !== "all" && project.data === chosenFilter) {
               return <RecentProject project={project} />;

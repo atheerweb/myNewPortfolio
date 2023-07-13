@@ -1,38 +1,37 @@
-
-
 import { navLinks } from "../../utils/constants";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+import "./SideMenu.scss";
 
 const SideMenu = ({ isActive, toggleSideMenu }) => {
   const checkActiveState = () => {
-    return isActive ? "active" : "";
+    return isActive ? "visible" : "hidden";
   };
-  const linkRef = useRef(null);
-
-  function handleClick() {
-    document.querySelector(".projects").scrollIntoView({
-      behavior: "smooth",
-    });
-    toggleSideMenu();
-  }
 
   return (
-    <ul id="nav__links__mobile" className={checkActiveState()}>
-      <div className="nav__mobile__exit" onClick={toggleSideMenu}>
-        <div className="cross"></div>
-        <div className="cross cross__reverse"></div>
+    <ul
+      className={`fixed bg-primaryColor text-white top-0 p-10  h-screen w-screen z ${checkActiveState()}`}
+    >
+      <div
+        className="w-full flex flex-row-reverse py-10"
+        onClick={toggleSideMenu}
+      >
+      <div>
+        <div className="w-16 h-1 relative rotate-45 bg-white rounded top-1"></div>
+        <div className="w-16 h-1 bg-white rounded negative-rotate-45"></div>
       </div>
-      <div className="nav__links__container">
-        <div className="nav__links__mobile__wrapper">
+      </div>
+      <div className="">
+        <div className="flex flex-col gap-10">
           {navLinks.map((link, linkIndex) => (
-            <li
-              data={link.name}
+            <Link
+              to={link.route}
               key={linkIndex}
-              onClick={handleClick}
-              ref={linkRef}
+              className="text-3xl font-semibold"
+              onClick={toggleSideMenu}
             >
               {link.name}
-            </li>
+            </Link>
           ))}
         </div>
       </div>

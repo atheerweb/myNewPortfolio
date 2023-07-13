@@ -1,6 +1,7 @@
 import { navLinks } from "../../utils/constants";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import "./Sidebar.scss";
 const SideMenu = ({ isActive, toggleSideMenu }) => {
   const checkActiveState = () => {
     return isActive ? "visible" : "hidden";
@@ -14,10 +15,10 @@ const SideMenu = ({ isActive, toggleSideMenu }) => {
         className="w-full flex flex-row-reverse py-10"
         onClick={toggleSideMenu}
       >
-      <div>
-        <div className="w-16 h-1 relative rotate-45 bg-white rounded top-1"></div>
-        <div className="w-16 h-1 bg-white rounded negative-rotate-45"></div>
-      </div>
+        <div>
+          <div className="w-16 h-1 relative rotate-45 bg-white rounded top-1"></div>
+          <div className="w-16 h-1 bg-white rounded negative-rotate-45"></div>
+        </div>
       </div>
       <div className="">
         <div className="flex flex-col gap-10">

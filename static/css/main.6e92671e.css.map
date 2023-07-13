@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.6e92671e.css","mappings":"AAAA;;CAAA,+vKAEA,+3IAFA,+C,CAAA,sB,CAAA,sB,CAAA,qB,CAAA,qB,CAAA,sB,CAAA,gD,CAAA,uC,CAAA,6C,CAAA,sB,CAAA,qB,CAAA,kB,CAAA,mD,CAAA,gC,CAAA,0C,CAAA,kC","sources":["index.scss"],"sourcesContent":["@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n\r\n\r\n\r\n\r\n"],"names":[],"sourceRoot":""}

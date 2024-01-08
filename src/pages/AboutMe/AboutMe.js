@@ -49,7 +49,7 @@ const Home = () => {
             info?
             <a
               href="https://drive.google.com/file/d/1N9Rb-kGZds8RPsSCjGpVBcuT256BFMkK/view?usp=sharing"
-              className="text-blue-600 underline"
+              className="text-blue-600 underline px-1"
             >
               download resume
             </a>

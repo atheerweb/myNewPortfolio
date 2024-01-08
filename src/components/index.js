@@ -7,6 +7,8 @@ import RecentProject from "./RecentProject";
 import StrippedHeading from "./StrippedHeading";
 import InitialTransition from "./InitialTransition";
 import DefaultLayout from "./layouts/DefaultLayout";
+import DesktopNavLinks from "./NavBar/DesktopNavLinks";
+import HamBurgerMenu from "./NavBar/HamBurgerMenu";
 
 export {
   Footer,
@@ -18,4 +20,6 @@ export {
   StrippedHeading,
   InitialTransition,
   DefaultLayout,
+  DesktopNavLinks,
+  HamBurgerMenu,
 };

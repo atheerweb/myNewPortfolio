@@ -6,13 +6,15 @@ function App() {
   return (
     <Router>
       <InitialTransition />
-      <div className="App font-body m-auto max-w-7xl min-h-screen">
+      <div className="App font-body m-auto max-w-7xl">
         <NavBar />
-        <div className="p-4 sm:px-0 sm:py-10">
+        <div className="p-4 sm:px-0 sm:py-10 min-h-96">
           <AnimatedRoutes />
         </div>
       </div>
-      <Footer />
+      <div className="max-w-screen-2xl">
+        <Footer />
+      </div>
     </Router>
   );
 }

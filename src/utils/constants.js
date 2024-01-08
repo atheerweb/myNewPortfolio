@@ -23,81 +23,105 @@ const companies = [
 ];
 let projects = [
   {
+    category: "Freelance",
+    name: "almini freelance",
+    date: "march 2023 ~ june 2023",
+    techs: [react],
+    link: "https://graduation-project-frontend-ashen.vercel.app/",
+    data: "freelance",
+    img: `${process.env.PUBLIC_URL}/images/projects/almini-freelance.png`,
+  },
+  {
+    category: "Learning management systems",
+    name: "almini courses",
+    date: "march 2023 ~ june 2023",
+    techs: [react],
+    link: "https://graduation-project-courses.vercel.app/",
+    data: "lms",
+    img: `${process.env.PUBLIC_URL}/images/projects/almini-courses.png`,
+  },
+  {
+    category: "Freelance",
+    name: "doworkss web",
+    date: "jan 2023 ~ july 2023",
+    techs: [sass, nuxt, firebaseImg],
+    link: "https://staging.doworkss.com/",
+    data: "freelance",
+    img: `${process.env.PUBLIC_URL}/images/projects/doworkss.png`,
+  },
+  {
     category: "E-commerce",
     name: "Meta Store",
     date: "july 2022 ~ ",
     techs: [sass, nuxt],
-    key: 0,
     link: "https://metacode.store/",
     data: "e-commerce",
+    img: `${process.env.PUBLIC_URL}/images/projects/meta-store.png`,
   },
   {
     category: "Learning management systems",
     name: "Alroaa Academy",
     date: "November 2021 ~ March 2022",
     techs: [firebaseImg, sass, nuxt],
-    key: 1,
     link: "https://rq22-21e1e.web.app/",
     data: "lms",
+    img: `${process.env.PUBLIC_URL}/images/projects/alroaa-platform.png`,
   },
   {
     category: "Blogs",
     name: "Alroaa Blog demo",
     date: "August 2020 ~ Jan 2021",
     techs: [firebaseImg, sass, vue],
-    key: 2,
     link: "https://alroaaacademyblog.web.app/",
     data: "blogs",
+    img: `${process.env.PUBLIC_URL}/images/projects/alroaa-blog.png`,
   },
   {
     category: "Learning management systems",
-    name: "Alamini Platform",
+    name: "Alamini Platform(old)",
     date: "March 2022 ~ May 2022",
     techs: [firebaseImg, react],
-    key: 3,
     link: "https://alaminilms.web.app/",
     data: "lms",
+    img: `${process.env.PUBLIC_URL}/images/projects/alimini-old.png`,
   },
   {
     category: "E-Commerce",
     name: "Witty stores demo",
     date: "March 2022 ~ March 2022",
     techs: [react, firebaseImg, sass],
-    key: 4,
     link: "https://wittystore.netlify.app/",
     data: "e-commerce",
+    img: `${process.env.PUBLIC_URL}/images/projects/witty-store.png`,
   },
   {
     category: "Other",
     name: "Calculator",
     date: "March 2021 ~ May 2021",
     techs: [vanillajs],
-    key: 5,
     link: "https://atheerweb.github.io/Calculator/",
     data: "other",
+    img: `${process.env.PUBLIC_URL}/images/projects/calculator.png`,
   },
   {
     category: "E-Commerce",
     name: "Stabraq",
     date: "Apirl 2020 ~ Apirl 2020",
     techs: [vanillajs],
-    key: 6,
     link: "https://atheerweb.github.io/stabraq/",
     data: "e-commerce",
+    img: `${process.env.PUBLIC_URL}/images/projects/stabraq.png`,
   },
   {
     category: "Other",
     name: "Todo-list",
     date: "March 2021 ~ May 2021",
     techs: [vanillajs],
-    key: 7,
     link: "https://atheerweb.github.io/todolistproject/",
     data: "other",
+    img: `${process.env.PUBLIC_URL}/images/projects/todo-app.png`,
   },
 ];
-for (let i = 0; i < projects.length; i++) {
-  projects[i]["img"] = `${process.env.PUBLIC_URL}/images/${i}.png`;
-}
 
 const navLinks = [
   { name: "About Me", route: "/" },
@@ -144,7 +168,14 @@ const socialMedia = [
   },
 ];
 
-const projectTypes = ["all", "lms", "blogs", "e-commerce", "other"];
+const projectTypes = [
+  "all",
+  "lms",
+  "blogs",
+  "e-commerce",
+  "freelance",
+  "other",
+];
 
 export {
   sections,

@@ -6,6 +6,7 @@ import AnimatedRoutes from "./AnimatedRoutes";
 import RecentProject from "./RecentProject";
 import StrippedHeading from "./StrippedHeading";
 import InitialTransition from "./InitialTransition";
+import DefaultLayout from "./layouts/DefaultLayout";
 
 export {
   Footer,
@@ -16,4 +17,5 @@ export {
   RecentProject,
   StrippedHeading,
   InitialTransition,
+  DefaultLayout,
 };

@@ -1,18 +1,11 @@
-import { Footer, NavBar, AnimatedRoutes } from "./components/index";
+import { DefaultLayout, AnimatedRoutes } from "./components/index";
 import { InitialTransition } from "./components";
-import { motion } from "framer-motion";
 import { HashRouter as Router } from "react-router-dom";
 function App() {
   return (
     <Router>
       <InitialTransition />
-      <div className="App font-body m-auto max-w-7xl min-h-screen">
-        <NavBar />
-        <div className="p-4 sm:px-0 sm:py-10">
-          <AnimatedRoutes />
-        </div>
-      </div>
-      <Footer />
+      <DefaultLayout content={<AnimatedRoutes />} />
     </Router>
   );
 }

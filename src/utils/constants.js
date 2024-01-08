@@ -23,6 +23,15 @@ const companies = [
 ];
 let projects = [
   {
+    category: "E-commerce",
+    name: "Cashiern",
+    date: "july 2023 ~ january 2024",
+    techs: [vue],
+    link: "https://dev.nqde.net/",
+    data: "e-commerce",
+    img: `${process.env.PUBLIC_URL}/images/projects/almini-freelance.png`,
+  },
+  {
     category: "Freelance",
     name: "almini freelance",
     date: "march 2023 ~ june 2023",
@@ -125,10 +134,10 @@ let projects = [
 
 const navLinks = [
   { name: "About Me", route: "/" },
-  { name: "Testimonials", route: "/testimonials" },
   { name: "Projects", route: "/recent-projects" },
-  { name: "Contact Me", route: "/contact-me" },
+  { name: "Testimonials", route: "/testimonials" },
 ];
+// { name: "Contact Me", route: "/contact-me" },
 
 const animationConfiguration = {
   initial: { opacity: 0, scale: 0.5 },
@@ -154,7 +163,7 @@ const socialMedia = [
   {
     name: "Whatsapp",
     img: whatsapp,
-    link: "wa.link/eqt8qd",
+    link: "wa.link/r8kvkf",
   },
   {
     name: "LinkedIn",

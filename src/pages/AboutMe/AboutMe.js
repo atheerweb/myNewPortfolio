@@ -3,11 +3,8 @@ import { linkedIn, github, profilepicture } from "../../assets/index";
 import { titleAnimation } from "../../utils/animations";
 
 import { motion } from "framer-motion";
-// const content = {
-//   animate: {
-//     transition: { staggerChildren: 0.1, delayChildren: 2.3 },
-//   },
-// };
+
+
 
 const Home = () => {
   ChangeTitle("Yousouf Mustafa | Home");
@@ -19,6 +16,7 @@ const Home = () => {
       exit={{ opacity: 0 }}
     >
       <header className="flex flex-col sm:flex-row-reverse items-center justify-between">
+    {/* 👉 PROFILE PICTURE */}
         <img
           src={profilepicture}
           className="w-full h-full   sm:w-2/5 sm:h-2/5 rounded-lg"
@@ -29,6 +27,7 @@ const Home = () => {
           animate="animate"
           className="flex flex-col gap-5 sm:gap-14"
         >
+        {/* 👉 JOB TITLE */}
           <motion.div
             variants={titleAnimation}
             className="flex mt-5 sm:mt-0  sm:gap-6 flex-col"
@@ -40,7 +39,7 @@ const Home = () => {
               front end heavy
             </h1>
           </motion.div>
-
+          {/* 👉 ABOUT ME */}
           <motion.p
             variants={titleAnimation}
             className="sm:w-9/12 text-base sm:text-lg  leading-7 sm:leading-9 text-gray-500 text-center sm:text-start"
@@ -55,6 +54,7 @@ const Home = () => {
               download resume
             </a>
           </motion.p>
+          {/* 👉 BUTTONS */}
           <div className="flex items-center sm:items-start justify-center sm:justify-start gap-6">
             <a
               href="https://www.linkedin.com/in/yousouf-essa-7029531b7/"

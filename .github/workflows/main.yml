@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - "main"
+name: "🚀 deploy to github pages"
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 🚚 Use Nodejs 16
+        uses: actions/setup-node@v2
+
+      - name: 📦 install modules
+        run: npm install
+
+      - name: ⚒️ build the project
+        run: npm run build
+
+      - name: 👩‍🚀 deploy to github pages
+        run: npm run build
